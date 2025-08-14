@@ -23,6 +23,8 @@ Recent publications using CASM
 
 .. include:: /_static/publications/Behara2025_1/card.rst
 
+.. include:: /_static/publications/Thomas2024_1/card.rst
+
 
 Getting help
 ------------
