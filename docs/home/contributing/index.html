@@ -32,6 +32,7 @@
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=da4e430f" />
   
   <!-- So that users can add custom icons -->
@@ -45,6 +46,7 @@
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'contributing/index';</script>
     <link rel="icon" href="../_static/favicon-16x16.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -371,57 +373,17 @@
 </a>
 <div class="extra-space-36"></div><section id="contributing">
 <span id="contributing-to-casm"></span><h1>Contributing<a class="headerlink" href="#contributing" title="Link to this heading">#</a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
+<p>For CASM v2+, the large existing distributions CASMcode (for C++ code) and CASMpython (for Python code) are split into smaller distributions focused on particular topics. They are organized into two namespaces: <em>libcasm</em>, for packages that include C++ implementations, and <em>casm</em>, for pure Python packages.</p>
+<p>Python namespace packages allow distributing subpackages seperately so a project may be split into smaller more focused efforts. For example, the CASM structure mapping package (<em>libcasm.mapping</em>) and the CASM cluster expansion Monte Carlo package (<em>libcasm.clexmonte</em>) can be developed and distributed separately. Each distribution package installs one or more Python namespace packages into the particular namespace.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="contributing_to_libcasm_packages.html">Contributing to <em>libcasm</em> Packages</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="contributing_to_libcasm_packages.html#layout">Layout</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="contributing_to_libcasm_packages.html#repository-layout">Repository layout</a></li>
-<li class="toctree-l3"><a class="reference internal" href="contributing_to_libcasm_packages.html#installation-layout">Installation layout</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="contributing_to_libcasm_packages.html#installing-from-source">Installing from source</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contributing_to_libcasm_packages.html#building-documentation">Building documentation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contributing_to_libcasm_packages.html#testing">Testing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contributing_to_libcasm_packages.html#installing-in-editable-mode">Installing in editable mode</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="contributing_to_libcasm_packages.html#installing-c-components-only">Installing C++ components only</a></li>
-<li class="toctree-l3"><a class="reference internal" href="contributing_to_libcasm_packages.html#installing-pybind11-and-pure-python-components">Installing pybind11 and pure Python components</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="contributing_to_libcasm_packages.html#testing-the-combined-build-process">Testing the combined build process</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contributing_to_libcasm_packages.html#c-development">C++ development</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="contributing_to_libcasm_packages.html#c-formatting">C++ formatting</a></li>
-<li class="toctree-l3"><a class="reference internal" href="contributing_to_libcasm_packages.html#adding-or-removing-c-files">Adding or removing C++ files</a></li>
-<li class="toctree-l3"><a class="reference internal" href="contributing_to_libcasm_packages.html#c-style">C++ style</a></li>
-<li class="toctree-l3"><a class="reference internal" href="contributing_to_libcasm_packages.html#adding-c-tests">Adding C++ tests</a></li>
-<li class="toctree-l3"><a class="reference internal" href="contributing_to_libcasm_packages.html#using-casm-c-libraries-in-external-packages">Using CASM C++ libraries in external packages</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="contributing_to_libcasm_packages.html#python-development">Python development</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contributing_to_libcasm_packages.html#release-process">Release process</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="contributing_to_casm_packages.html">Contributing to <em>casm</em> Packages</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="contributing_to_casm_packages.html#layout">Layout</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="contributing_to_casm_packages.html#repository-layout">Repository layout</a></li>
-<li class="toctree-l3"><a class="reference internal" href="contributing_to_casm_packages.html#installation-layout">Installation layout</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="contributing_to_casm_packages.html#installing-from-source">Installing from source</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contributing_to_casm_packages.html#building-documentation">Building documentation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contributing_to_casm_packages.html#testing">Testing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contributing_to_casm_packages.html#python-development">Python development</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="contributing_to_casm_packages.html#python-linting">Python linting</a></li>
-<li class="toctree-l3"><a class="reference internal" href="contributing_to_casm_packages.html#python-formatting">Python formatting</a></li>
-<li class="toctree-l3"><a class="reference internal" href="contributing_to_casm_packages.html#python-documentation">Python documentation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="contributing_to_casm_packages.html#adding-tests">Adding tests</a></li>
-<li class="toctree-l3"><a class="reference internal" href="contributing_to_casm_packages.html#adding-dependencies">Adding dependencies</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="contributing_to_casm_packages.html#release-process">Release process</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="contributing_to_libcasm_packages.html">Contributing to <em>libcasm</em> Packages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing_to_casm_packages.html">Contributing to <em>casm</em> Packages</a></li>
 </ul>
 </div>
+</section>
 </section>
 
 
@@ -464,13 +426,16 @@
 
 
   <div class="sidebar-secondary-item">
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="../_sources/contributing/index.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div></div>
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
+</ul>
+  </nav></div>
 
 </div></div>
               

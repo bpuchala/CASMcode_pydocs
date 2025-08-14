@@ -7,6 +7,10 @@ Contributing to *casm* Packages
 
 Collaboration is welcome, and new features can be incorporated by forking one of the *casm* repositories on GitHub, creating a bug fix or new feature, and submitting a pull request. If you are interested in developing features that involve a significant time investment, we encourage you to first contact the CASM development team at :email:`casm-developers@lists.engr.ucsb.edu`.
 
+
+Making Pull Requests
+--------------------
+
 Pull requests should:
 
 - Create a branch from the development branch for new features (e.g., *2.X*) and name it to indicate that it implements a new feature (e.g., *2.X-myfeature*) or a bug fix (e.g., *2.0.0-patch-issue*).
@@ -182,6 +186,10 @@ Dependencies should be added thoughtfully, balancing the need for functionality 
 
 Release process
 ----------------
+
+.. note::
+
+    The following is primarily a reference for the CASM maintainers.
 
 Packages are built into pure Python wheels by GitHub Actions. For an example, see `build.yml <https://github.com/prisms-center/CASMcode_bset/blob/main/.github/workflows/build.yml>`_ in the *casm-bset* package.
 

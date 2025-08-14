@@ -32,6 +32,7 @@
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=da4e430f" />
   
   <!-- So that users can add custom icons -->
@@ -45,6 +46,8 @@
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="icon" href="_static/favicon-16x16.png"/>
     <link rel="index" title="Index" href="genindex.html" />
@@ -339,12 +342,26 @@
 <h1>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h1>
 <p>CASM (Clusters Approach to Statistical Mechanics) is an open source software suite designed to perform first-principles statistical mechanical studies of multi-component crystalline solids. CASM interfaces with first-principles electronic structure codes, automates the construction and parameterization of effective Hamiltonians and subsequently builds highly optimized (kinetic) Monte Carlo codes to predict finite-temperature thermodynamic and kinetic properties. CASM uses group theoretic techniques that take full advantage of crystal symmetry in order to rigorously construct effective Hamiltonians for almost arbitrary degrees of freedom in crystalline solids. This includes cluster expansions for configurational disorder in multi-component solids and lattice-dynamical effective Hamiltonians for vibrational degrees of freedom involved in structural phase transitions.</p>
 <p>To read more about CASM, or to cite it in a publication, please see the <a class="reference external" href="cite.html">Citing CASM</a> page.</p>
-<section id="example-use-cases">
-<h2>Example use cases<a class="headerlink" href="#example-use-cases" title="Link to this heading">#</a></h2>
-<p>TODO</p>
+</section>
+<section id="recent-publications-using-casm">
+<h1>Recent publications using CASM<a class="headerlink" href="#recent-publications-using-casm" title="Link to this heading">#</a></h1>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+The Crucial Role of Vacancy Concentration in Enabling Superatomic Diffusion in Lithium Intermetallics</div>
+<a class="reference external image-reference" href="https://doi.org/10.1021/acsenergylett.5c00266"><img alt="Description of the image" class="align-left" src="_images/image1.jpeg" style="width: 300px;" />
+</a>
+<p class="sd-card-text"><strong>Abstract</strong>: Anode-free solid-state Li batteries promise significant increases in energy densities compared to current commercial batteries that rely on liquid electrolytes. Major challenges persist in controlling morphological evolution during the plating and stripping of lithium metal at the anode current collector. Elemental additives that alloy with lithium have been found to modify the plating and stripping behavior of lithium. Many alloying elements form intermetallics with lithium and the mobility of Li through these intermetallics is believed to have an important effect on morphological evolution. This study shows that Li transport coefficients through intermetallics span a wide range in values, with the B32 LiAl intermetallic predicted to have a Li tracer diffusion coefficient as high as <span class="math notranslate nohighlight">\(10^{–6}\)</span> <span class="math notranslate nohighlight">\(\mathrm{cm}^{2}/\mathrm{s}\)</span> at room temperature, which is 8 orders of magnitude larger than that of isostructural B32 LiZn. This work demonstrates the crucial role of vacancy concentration in controlling the mobility of Li atoms through intermetallics. While the migration barriers for Li-vacancy exchanges in both LiAl and LiZn are remarkably low, the superatomic conductivity in LiAl is shown to arise from the unique electronic structure of the B32 LiAl compound, which favors high concentrations of vacancies.</p>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Cluster expansion, Metropolis Monte Carlo simulations, Kinetic Monte Carlo simulations</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">S. S. Behara and A. Van der Ven, <em>ACS Energy Lett.</em> 2025, <strong>10</strong>, 1772−1778.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1021/acsenergylett.5c00266">10.1021/acsenergylett.5c00266</a> <a class="reference download internal" download="" href="_downloads/b29def6cc9659e35861e926a240a523e/WOS_001448319400001.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
 </section>
 <section id="getting-help">
-<h2>Getting help<a class="headerlink" href="#getting-help" title="Link to this heading">#</a></h2>
+<h1>Getting help<a class="headerlink" href="#getting-help" title="Link to this heading">#</a></h1>
 <ul class="simple">
 <li><p><script type="text/javascript">document.write(
     "<n pynff=\"ersrerapr rkgreany\" uers=\"znvygb:pnfz-qrirybcref\100yvfgf\056rate\056hpfo\056rqh\">Rznvy gur qrirybcref<\057n>".replace(/[a-zA-Z]/g,
@@ -358,7 +375,6 @@
 <li><p><a class="reference external" href="https://lists.engr.ucsb.edu/mailman/listinfo/casm-users">Join the announcements mailing list</a></p></li>
 <li><p>To request features or report bugs, please go to the GitHub repositories for individual CASM packages.</p></li>
 </ul>
-</section>
 </section>
 
 
@@ -399,19 +415,12 @@
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-use-cases">Example use cases</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-help">Getting help</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Overview</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#recent-publications-using-casm">Recent publications using CASM</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-help">Getting help</a></li>
 </ul>
-  </nav></div>
 
-  <div class="sidebar-secondary-item">
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="_sources/index.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div></div>
+  </nav></div>
 
 </div></div>
               

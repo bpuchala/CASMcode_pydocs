@@ -2,6 +2,7 @@ numpydoc
 sphinx
 sphinx-argparse
 sphinx-copybutton
+sphinx-design
 sphinx_rtd_theme
 sphinxcontrib-bibtex
 sphinxcontrib-email

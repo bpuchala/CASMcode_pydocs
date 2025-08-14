@@ -7,6 +7,10 @@ Contributing to *libcasm* Packages
 
 Collaboration is welcome and new features can be incorporated by forking one of the *libcasm* repositories on GitHub, creating a bug fix or new feature, and submitting a pull request. If you are interested in developing features that involve a significant time investment we encourage you to first contact the CASM development team at :email:`casm-developers@lists.engr.ucsb.edu`.
 
+
+Making Pull Requests
+--------------------
+
 Pull requests should:
 
 - Create a branch from the development branch for new features (i.e. *2.X*) and name it to indicate that it implements a new feature (i.e. *2.X-myfeature*) or a bug fix (i.e *2.0.0-patch-issue*)
@@ -353,6 +357,10 @@ Follow the Python development and documentation guidelines :ref:`here <contribut
 
 Release process
 ----------------
+
+.. note::
+
+    The following is primarily a reference for the CASM maintainers. However, it can also be used as a guide for users who develop a new feature that they want to build into wheels that work with the publicly released CASM packages.
 
 Packages are built into Python wheels by GitHub Actions using `cibuildwheel <https://cibuildwheel.pypa.io/>`_. For an example, see `build_wheels.yml <https://github.com/prisms-center/CASMcode_configuration/blob/main/.github/workflows/build_wheels.yml>`_ in the *libcasm-configuration* package. This involves configuration in the `pyproject.toml <https://github.com/prisms-center/CASMcode_configuration/blob/main/pyproject.toml>`_ file.
 

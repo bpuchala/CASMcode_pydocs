@@ -32,6 +32,7 @@
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=da4e430f" />
   
   <!-- So that users can add custom icons -->
@@ -45,6 +46,7 @@
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'contributing/contributing_to_libcasm_packages';</script>
     <link rel="icon" href="../_static/favicon-16x16.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -383,6 +385,8 @@
         }
     )
 );</script>.</p>
+<section id="making-pull-requests">
+<h2>Making Pull Requests<a class="headerlink" href="#making-pull-requests" title="Link to this heading">#</a></h2>
 <p>Pull requests should:</p>
 <ul class="simple">
 <li><p>Create a branch from the development branch for new features (i.e. <em>2.X</em>) and name it to indicate that it implements a new feature (i.e. <em>2.X-myfeature</em>) or a bug fix (i.e <em>2.0.0-patch-issue</em>)</p></li>
@@ -392,6 +396,7 @@
 <li><p>Pass all CI tests</p></li>
 <li><p>Include a suggested CHANGELOG.md entry, see <a class="reference external" href="https://keepachangelog.com">keepachangelog.com</a>.</p></li>
 </ul>
+</section>
 <section id="layout">
 <h2>Layout<a class="headerlink" href="#layout" title="Link to this heading">#</a></h2>
 <section id="repository-layout">
@@ -663,6 +668,10 @@ git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </sp
 </section>
 <section id="release-process">
 <h2>Release process<a class="headerlink" href="#release-process" title="Link to this heading">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The following is primarily a reference for the CASM maintainers. However, it can also be used as a guide for users who develop a new feature that they want to build into wheels that work with the publicly released CASM packages.</p>
+</div>
 <p>Packages are built into Python wheels by GitHub Actions using <a class="reference external" href="https://cibuildwheel.pypa.io/">cibuildwheel</a>. For an example, see <a class="reference external" href="https://github.com/prisms-center/CASMcode_configuration/blob/main/.github/workflows/build_wheels.yml">build_wheels.yml</a> in the <em>libcasm-configuration</em> package. This involves configuration in the <a class="reference external" href="https://github.com/prisms-center/CASMcode_configuration/blob/main/pyproject.toml">pyproject.toml</a> file.</p>
 <p>Assume that the <em>libcasm</em> package repository git remote is called <em>origin</em>, that it has a stable <em>main</em> branch, a development branch called <em>2.X</em>. Then the release process is as follows:</p>
 <ol class="arabic">
@@ -793,6 +802,7 @@ git<span class="w"> </span>push
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-pull-requests">Making Pull Requests</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#layout">Layout</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#repository-layout">Repository layout</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installation-layout">Installation layout</a></li>
@@ -819,15 +829,6 @@ git<span class="w"> </span>push
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#release-process">Release process</a></li>
 </ul>
   </nav></div>
-
-  <div class="sidebar-secondary-item">
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="../_sources/contributing/contributing_to_libcasm_packages.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div></div>
 
 </div></div>
               
