@@ -1,0 +1,6 @@
+kpoints\_info
+=============
+
+.. currentmodule:: casm.tools.calc.methods
+
+.. autofunction:: kpoints_info

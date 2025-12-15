@@ -1,0 +1,6 @@
+run\_statusd
+============
+
+.. currentmodule:: casm.tools.calc.commands.status
+
+.. autofunction:: run_statusd

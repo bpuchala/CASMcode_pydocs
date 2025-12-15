@@ -1,0 +1,6 @@
+mapping\_costs
+==============
+
+.. currentmodule:: casm.tools.map
+
+.. automethod:: MappingSearchData.mapping_costs

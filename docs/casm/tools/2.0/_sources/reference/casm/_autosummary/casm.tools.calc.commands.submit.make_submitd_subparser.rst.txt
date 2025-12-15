@@ -1,0 +1,6 @@
+make\_submitd\_subparser
+========================
+
+.. currentmodule:: casm.tools.calc.commands.submit
+
+.. autofunction:: make_submitd_subparser

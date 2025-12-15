@@ -1,0 +1,6 @@
+update\_options\_to\_next\_n\_atoms
+===================================
+
+.. currentmodule:: casm.tools.map
+
+.. automethod:: MappingSearchData.update_options_to_next_n_atoms

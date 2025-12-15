@@ -1,0 +1,6 @@
+print\_statusd\_desc
+====================
+
+.. currentmodule:: casm.tools.calc.commands.status
+
+.. autofunction:: print_statusd_desc

@@ -1,0 +1,6 @@
+generate\_kpoints\_mesh
+=======================
+
+.. currentmodule:: casm.tools.calc.methods
+
+.. autofunction:: generate_kpoints_mesh
