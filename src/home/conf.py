@@ -2,6 +2,12 @@ import os
 
 # -- CASM common configuration ---
 
+
+# General information about the project.
+project = "CASM"
+copyright = "2026, CASM Developers"
+author = "CASM Developers"
+
 # -*- coding: utf-8 -*-
 #
 # CASM documentation build configuration file, created by

@@ -38,6 +38,7 @@ Core dependencies
 - **JSON for Modern C++**: "A JSON library for modern C++." `[link] <https://json.nlohmann.me/>`_
 - **Gzstream**: "Gzstream is a small C++ library, basically just a wrapper, that provides the functionality of the zlib C-library in a C++ iostream." `[link] <https://www.cs.unc.edu/Research/compgeom/gzstream/>`_
 - **Qhull**: A software package for computing the convex hull, Delaunay triangulation, and Voronoi diagrams. `[link] <http://www.qhull.org/>`_
+- **spglib**: CASM uses spglib to determine space group numbers and symbols from symmetry operations determined by CASM or spglib.
 
 Building and documentation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
