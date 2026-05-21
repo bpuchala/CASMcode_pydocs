@@ -105,12 +105,12 @@ extensions = [
 # OpenGraph meta tags — render a sensible preview when a docs page is shared
 # on Twitter/X, LinkedIn, Bluesky, Mastodon, Slack, etc. Pairs with the
 # manual share buttons in src/home/index.rst.
-ogp_site_url = "https://prisms-center.github.io/CASMcode_pydocs/home/"
+ogp_site_url = "https://bpuchala.github.io/CASMcode_pydocs/home/"
 ogp_site_name = "CASM"
 ogp_description_length = 200
 # Set when a hero/social image is available. Should be a raster PNG/JPEG
 # (most social platforms don't render SVG OG images).
-ogp_image = "https://prisms-center.github.io/CASMcode_pydocs/home/_static/og_image.png"
+ogp_image = "https://bpuchala.github.io/CASMcode_pydocs/home/_static/og_image.png"
 
 # bibtex_bibfiles = ["refs.bib"]
 
