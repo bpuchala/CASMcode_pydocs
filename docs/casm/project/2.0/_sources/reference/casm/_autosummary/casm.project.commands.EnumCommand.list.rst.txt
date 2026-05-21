@@ -1,6 +1,0 @@
-list
-====
-
-.. currentmodule:: casm.project.commands
-
-.. automethod:: EnumCommand.list

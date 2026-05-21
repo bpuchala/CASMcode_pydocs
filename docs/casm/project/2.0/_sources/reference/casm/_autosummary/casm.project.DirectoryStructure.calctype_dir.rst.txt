@@ -1,6 +1,0 @@
-calctype\_dir
-=============
-
-.. currentmodule:: casm.project
-
-.. automethod:: DirectoryStructure.calctype_dir

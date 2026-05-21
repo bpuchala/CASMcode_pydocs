@@ -1,6 +1,0 @@
-print\_crystal\_point\_group
-============================
-
-.. currentmodule:: casm.project.commands
-
-.. automethod:: SymCommand.print_crystal_point_group

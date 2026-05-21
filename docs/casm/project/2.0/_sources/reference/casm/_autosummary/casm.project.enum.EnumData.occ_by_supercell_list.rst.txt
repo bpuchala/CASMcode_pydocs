@@ -1,6 +1,0 @@
-occ\_by\_supercell\_list
-========================
-
-.. currentmodule:: casm.project.enum
-
-.. automethod:: EnumData.occ_by_supercell_list

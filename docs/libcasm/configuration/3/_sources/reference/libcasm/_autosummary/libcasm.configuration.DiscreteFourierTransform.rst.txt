@@ -1,0 +1,43 @@
+DiscreteFourierTransform
+========================
+
+.. currentmodule:: libcasm.configuration
+
+.. autoclass:: DiscreteFourierTransform
+  :show-inheritance:
+
+  
+  
+  .. rubric:: Methods
+
+  .. autosummary::
+    :signatures: short
+    :toctree:
+    :template: custom-function-template.rst
+  
+    ~DiscreteFourierTransform.dft
+    ~DiscreteFourierTransform.idft
+    ~DiscreteFourierTransform.local_delta_value
+    ~DiscreteFourierTransform.make_x
+    ~DiscreteFourierTransform.resolve_config
+    ~DiscreteFourierTransform.resolve_dof_values_vector
+    ~DiscreteFourierTransform.resolve_local_dof_values
+    ~DiscreteFourierTransform.resolve_occupation
+    ~DiscreteFourierTransform.update_X
+  
+  
+
+  
+  
+  .. rubric:: Attributes
+
+  .. autosummary::
+    :signatures: short
+    :toctree:
+    :template: custom-attr-template.rst
+    
+      ~DiscreteFourierTransform.supercell_kpoints
+      ~DiscreteFourierTransform.supercell_dof
+      ~DiscreteFourierTransform.dX
+    
+    

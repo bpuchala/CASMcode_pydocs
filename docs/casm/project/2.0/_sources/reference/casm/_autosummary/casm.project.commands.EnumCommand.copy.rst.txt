@@ -1,6 +1,0 @@
-copy
-====
-
-.. currentmodule:: casm.project.commands
-
-.. automethod:: EnumCommand.copy

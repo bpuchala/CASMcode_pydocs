@@ -1,6 +1,0 @@
-config\_list
-============
-
-.. currentmodule:: casm.project
-
-.. automethod:: DirectoryStructure.config_list

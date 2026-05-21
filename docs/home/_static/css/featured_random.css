@@ -1,0 +1,24 @@
+/* Hide all featured cards by default; featured_random.js adds .featured-visible
+ * to N at load to reveal them. The :not() selector means we don't have to
+ * fight inline styles to override the hide rule. */
+.featured-card:not(.featured-visible) {
+    display: none;
+}
+
+/* Lock every card image to a 300x200 box and letterbox/pillarbox with
+ * object-fit: contain — scales the image to fit inside the box, preserving
+ * the aspect ratio. Empty space on the sides for portrait images, top/bottom
+ * for landscape images. Requires the `.. image::` directive in
+ * card.rst.jinja to NOT set :width:, otherwise the inline style would
+ * conflict with this rule. */
+.featured-card img {
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+}
+
+/* Cap card width so a wide viewport doesn't stretch the right-hand text
+ * column into uncomfortably long lines. */
+.featured-card {
+    max-width: 700px;
+}

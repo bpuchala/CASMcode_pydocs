@@ -1,6 +1,0 @@
-id
-==
-
-.. currentmodule:: casm.project
-
-.. autoattribute:: EnumData.id

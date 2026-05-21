@@ -1,6 +1,0 @@
-occ\_by\_cluster
-================
-
-.. currentmodule:: casm.project.commands
-
-.. automethod:: EnumCommand.occ_by_cluster

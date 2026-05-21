@@ -1,6 +1,0 @@
-clust
-=====
-
-.. currentmodule:: casm.project
-
-.. automethod:: DirectoryStructure.clust

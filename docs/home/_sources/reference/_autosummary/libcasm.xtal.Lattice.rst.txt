@@ -1,0 +1,40 @@
+Lattice
+=======
+
+.. currentmodule:: libcasm.xtal
+
+.. autoclass:: Lattice
+  :show-inheritance:
+
+  
+  
+  .. rubric:: Methods
+
+  .. autosummary::
+    :nosignatures:
+    :toctree:
+    :template: custom-function-template.rst
+  
+    ~Lattice.column_vector_matrix
+    ~Lattice.copy
+    ~Lattice.from_dict
+    ~Lattice.from_lengths_and_angles
+    ~Lattice.is_equivalent_superlattice_of
+    ~Lattice.is_equivalent_to
+    ~Lattice.is_superlattice_of
+    ~Lattice.lengths_and_angles
+    ~Lattice.point_group
+    ~Lattice.reciprocal
+    ~Lattice.set_tol
+    ~Lattice.to_dict
+    ~Lattice.tol
+    ~Lattice.volume
+    ~Lattice.voronoi_inner_radius
+    ~Lattice.voronoi_number
+    ~Lattice.voronoi_table
+  
+  
+
+  
+  
+    

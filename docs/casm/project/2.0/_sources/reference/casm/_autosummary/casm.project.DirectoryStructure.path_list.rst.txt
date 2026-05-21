@@ -1,6 +1,0 @@
-path\_list
-==========
-
-.. currentmodule:: casm.project
-
-.. automethod:: DirectoryStructure.path_list

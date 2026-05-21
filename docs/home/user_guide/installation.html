@@ -7,6 +7,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Installation" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://prisms-center.github.io/CASMcode_pydocs/home/user_guide/installation.html" />
+<meta property="og:site_name" content="CASM" />
+<meta property="og:description" content="CASM consists of a collection of packages that implement different functionality. If you are learning CASM, casm-project is the best place to start. Installing casm-project will also install all of..." />
+<meta property="og:image" content="https://prisms-center.github.io/CASMcode_pydocs/home/_static/og_image.png" />
+<meta property="og:image:alt" content="CASM" />
+<meta name="description" content="CASM consists of a collection of packages that implement different functionality. If you are learning CASM, casm-project is the best place to start. Installing casm-project will also install all of..." />
 
     <title>Installation &#8212; CASM  documentation</title>
   
@@ -33,7 +41,10 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=da4e430f" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=9efdb074" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/featured_random.css?v=632cc064" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/tom-select.bootstrap5.min.css?v=900ec6fa" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/publications_list.css?v=fe3e4b86" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -48,6 +59,11 @@
     <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/installation';</script>
+    <script src="../_static/js/pkg_nav_labels.js?v=f5d72ee4"></script>
+    <script src="../_static/js/featured_random.js?v=d8968cf8"></script>
+    <script src="../_static/js/list.min.js?v=1c81fffb"></script>
+    <script src="../_static/js/tom-select.complete.min.js?v=69668b3b"></script>
+    <script src="../_static/js/publications_list.js?v=4502ef88"></script>
     <link rel="icon" href="../_static/favicon-16x16.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -168,11 +184,28 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../contributing/index.html">
+  <a class="nav-link nav-internal" href="../publications/index.html">
+    Publications
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../contributing/index.html">
     Contributing
   </a>
 </li>
 
+                </ul>
+            </li>
+            
   </ul>
 </nav></div>
       
@@ -275,6 +308,13 @@
 
 
 <li class="nav-item ">
+  <a class="nav-link nav-internal" href="../publications/index.html">
+    Publications
+  </a>
+</li>
+
+
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="../contributing/index.html">
     Contributing
   </a>
@@ -309,10 +349,8 @@
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Installation</a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="packages.html">Packages</a></li>
 </ul>
 </div>
 </nav></div>
@@ -389,16 +427,54 @@
 </section>
 <section id="install-from-source">
 <h2>Install from source<a class="headerlink" href="#install-from-source" title="Link to this heading">#</a></h2>
-<p>See <a href="#id1"><span class="problematic" id="id2">`contributing-to-casm`_</span></a>.</p>
+<p>See <a class="reference internal" href="../contributing/index.html#contributing-to-casm"><span class="std std-ref">Contributing</span></a>.</p>
 </section>
 <section id="for-contributors">
 <h2>For contributors<a class="headerlink" href="#for-contributors" title="Link to this heading">#</a></h2>
-<p>See <a href="#id3"><span class="problematic" id="id4">`contributing-to-casm`_</span></a>.</p>
-</section>
+<p>See <a class="reference internal" href="../contributing/index.html#contributing-to-casm"><span class="std std-ref">Contributing</span></a>.</p>
 </section>
 <section id="configuration">
-<h1>Configuration<a class="headerlink" href="#configuration" title="Link to this heading">#</a></h1>
-<p>TODO</p>
+<h2>Configuration<a class="headerlink" href="#configuration" title="Link to this heading">#</a></h2>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>CASM clexulator require a compiler with support for C++17. For GCC, version 10 or later is required.</p>
+<p>If the compiler is made available using a command like <code class="docutils literal notranslate"><span class="pre">module</span> <span class="pre">load</span> <span class="pre">gcc/12.2.1</span></code> make sure to perform that step first.</p>
+</div>
+<section id="from-the-casm-installation-location">
+<h3>1. From the CASM installation location<a class="headerlink" href="#from-the-casm-installation-location" title="Link to this heading">#</a></h3>
+<p>On many systems, a single environment variable is needed to configure CASM and it can be determined by inspection of where CASM is installed.</p>
+<p>On the command line this can be done using:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">CASM_PREFIX</span><span class="o">=</span><span class="k">$(</span>python<span class="w"> </span>-m<span class="w"> </span>libcasm.casmglobal<span class="w"> </span>--prefix<span class="k">)</span>
+</pre></div>
+</div>
+<p>In a Python process this can be done using:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pathlib</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;CASM_PREFIX&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">libcasm</span><span class="o">.</span><span class="n">casmglobal</span><span class="o">.</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">parent</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="using-an-shell-script">
+<h3>2. Using an shell script<a class="headerlink" href="#using-an-shell-script" title="Link to this heading">#</a></h3>
+<p>To run a configuration test to determine other environment variables needed to compile and link the clexulator generated by casm-bset (see <a class="reference external" href="https://prisms-center.github.io/CASMcode_pydocs/libcasm/clexulator/3/reference/libcasm/_autosummary/libcasm.clexulator.make_clexulator.html#libcasm.clexulator.make_clexulator" title="(in libcasm-clexulator v3.0)"><code class="xref py py-func docutils literal notranslate"><span class="pre">make_clexulator()</span></code></a>) use:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>casm.bset<span class="w"> </span>--autoconfigure<span class="w"> </span>--shfile<span class="w"> </span>casmenv.sh
+</pre></div>
+</div>
+<p>If configuration is successful, this will create a file <cite>casmenv.sh</cite> that can be sourced to set the necessary environment variables before using CASM:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span><span class="w"> </span>./casmenv.sh
+</pre></div>
+</div>
+</section>
+<section id="in-a-python-process">
+<h3>3. In a Python process<a class="headerlink" href="#in-a-python-process" title="Link to this heading">#</a></h3>
+<p>At the cost of a few seconds each time Python is launched, the configuration test can also be run during a Python process using <a class="reference external" href="https://prisms-center.github.io/CASMcode_pydocs/casm/bset/2.0/reference/casm/_autosummary/casm.bset.autoconfigure.html#casm.bset.autoconfigure" title="(in casm-bset v2.2)"><code class="xref py py-func docutils literal notranslate"><span class="pre">autoconfigure()</span></code></a>:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">casm.bset</span>
+<span class="n">casm</span><span class="o">.</span><span class="n">bset</span><span class="o">.</span><span class="n">autoconfigure</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>By default, if configuration is successful, this method will set the environment variables found for the current process. If not successful, it will raise an exception.</p>
+</section>
+</section>
 </section>
 
 
@@ -448,15 +524,16 @@
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Installation</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-from-pypi">Install from PyPI</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-from-source">Install from source</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#for-contributors">For contributors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration">Configuration</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#from-the-casm-installation-location">1. From the CASM installation location</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-an-shell-script">2. Using an shell script</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#in-a-python-process">3. In a Python process</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration">Configuration</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>
@@ -484,7 +561,7 @@
 
   <p class="copyright">
     
-      © Copyright 2024, CASM Developers.
+      © Copyright 2026, CASM Developers.
       <br/>
     
   </p>

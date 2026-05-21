@@ -1,6 +1,0 @@
-configuration\_dir
-==================
-
-.. currentmodule:: casm.project
-
-.. automethod:: DirectoryStructure.configuration_dir

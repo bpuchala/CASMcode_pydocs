@@ -32,9 +32,10 @@
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=1038f348" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=5120c660" />
   
   <!-- So that users can add custom icons -->
   <script src="../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -43,17 +44,18 @@
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../../../_static/documentation_options.js?v=df8f2d03"></script>
-    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../../_static/copybutton.js?v=644e031c"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../../../_static/togglebutton.js?v=1ae7504c"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'usage/examples/enum_occ_by_supercell_SiGe/enum_occ_by_supercell_SiGe';</script>
     <link rel="icon" href="../../../_static/favicon-16x16.png"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
@@ -515,32 +517,8 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Creating CASM project directory at SiGe_occ
-Initializing CASM project &#39;SiGe_occ&#39;
-Creating CASM project directory tree at: SiGe_occ
-write: SiGe_occ/.casm/prim.json
-write: SiGe_occ/.casm/project_settings.json
-write: SiGe_occ/symmetry/lattice_point_group.json
-write: SiGe_occ/symmetry/factor_group.json
-write: SiGe_occ/symmetry/crystal_point_group.json
-
-Lattice point group: 
-- size=48
-- international=m-3m
-- schoenflies=Oh
-
-Factor group: 
-- size=48
-- international=F d -3 m, F 4_1/d -3 2/m, Fd-3m
-- schoenflies=Oh^7
-- spacegroup=227
-
-Crystal point group: 
-- size=48
-- international=m-3m
-- schoenflies=Oh
-
-DONE
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CASM project already exists at SiGe_occ
+Using existing project
 
 Factor group operations:
 0: 1
@@ -640,60 +618,45 @@ Factor group operations:
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-- Begin: Enumerating occupations by supercell --
 
 Enumerate configurations for: SCEL1_1_1_1_0_0_0
-3 configurations (3 new, 0 excluded by filter)
-
+3 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL2_2_1_1_0_1_1
-4 configurations (4 new, 0 excluded by filter)
-
+4 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL2_2_1_1_0_0_1
-3 configurations (3 new, 0 excluded by filter)
-
+3 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL3_3_1_1_0_2_2
-13 configurations (13 new, 0 excluded by filter)
-
+13 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL3_3_1_1_0_2_1
-10 configurations (10 new, 0 excluded by filter)
-
+10 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL3_3_1_1_0_0_2
-10 configurations (10 new, 0 excluded by filter)
-
+10 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL4_4_1_1_0_0_0
-36 configurations (36 new, 0 excluded by filter)
-
+36 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL4_4_1_1_0_1_0
-27 configurations (27 new, 0 excluded by filter)
-
+27 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL4_4_1_1_0_0_2
-36 configurations (36 new, 0 excluded by filter)
-
+36 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL4_4_1_1_0_0_3
-24 configurations (24 new, 0 excluded by filter)
-
+24 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL4_4_1_1_0_2_1
-15 configurations (15 new, 0 excluded by filter)
-
+15 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL4_2_2_1_0_1_0
-23 configurations (23 new, 0 excluded by filter)
-
+23 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL4_2_2_1_1_1_0
-10 configurations (10 new, 0 excluded by filter)
-
+10 configurations (0 new, 0 excluded by filter)
   DONE
 
 -- Summary --
 
-  Initial number of configurations: 0
+  Initial number of configurations: 214
   Final number of configurations: 214
-
 Committing...
 
 EnumData:
 - id: main
 - supercell_set: 13 supercells
 - configuration_set: 214 configurations
-
-write: SiGe_occ/enumerations/enum.main/scel_set.json
-write: SiGe_occ/enumerations/enum.main/config_set.json
+overwrite: SiGe_occ/enumerations/enum.main/scel_set.json
+overwrite: SiGe_occ/enumerations/enum.main/config_set.json
 </pre></div>
 </div>
 </div>
@@ -754,7 +717,7 @@ SCEL3_3_1_1_0_2_2/6     [1 1 0 0 1 0]       [&#39;Ge&#39;, &#39;Ge&#39;, &#39;Si
 SCEL3_3_1_1_0_2_2/12    [1 1 0 0 1 1]       [&#39;Ge&#39;, &#39;Ge&#39;, &#39;Si&#39;, &#39;Si&#39;, &#39;Ge&#39;, &#39;Ge&#39;]    
 SCEL3_3_1_1_0_2_2/3     [1 1 0 1 0 0]       [&#39;Ge&#39;, &#39;Ge&#39;, &#39;Si&#39;, &#39;Ge&#39;, &#39;Si&#39;, &#39;Si&#39;]    
 SCEL3_3_1_1_0_2_2/11    [1 1 0 1 0 1]       [&#39;Ge&#39;, &#39;Ge&#39;, &#39;Si&#39;, &#39;Ge&#39;, &#39;Si&#39;, &#39;Ge&#39;]    
-SCEL3_3_1_1_0_2_2/7     [1 1 0 1 1 0]       [&#39;Ge&#39;, &#39;Ge&#39;, &#39;Si&#39;, &#39;Ge&#39;, &#39;Ge&#39;, &#39;Si&#39;]    
+SCEL3_3_1_1_0_2_2/7     [1 1 0 1 1 0]       [&#39;Ge&#39;, &#39;Ge&#39;, &#39;Si&#39;, &#39;Ge&#39;, &#39;Ge&#39;, &#39;Si&#39;]
 </pre></div>
 </div>
 </div>
@@ -772,8 +735,8 @@ SCEL3_3_1_1_0_2_2/7     [1 1 0 1 1 0]       [&#39;Ge&#39;, &#39;Ge&#39;, &#39;Si
 <div class="dropdown note admonition">
 <p class="admonition-title"><strong>Notes</strong></p>
 <p>In a crystal with a fixed number of sites, the number of species occupying the same sublattice are not indepedent. In general, a crystal occupied by <span class="math notranslate nohighlight">\(s\)</span> component species will have <span class="math notranslate nohighlight">\(k&lt;s\)</span> independent compositions. As described in <a class="reference internal" href="#ref-1">[1]</a>, CASM converts between compositions expressed as number of species per unit cell and compositions in terms of independent “parametric composition axes” using:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6848799a-6c11-4e53-ae97-4411161389cb">
-<span class="eqno">(1)<a class="headerlink" href="#equation-6848799a-6c11-4e53-ae97-4411161389cb" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f8a66cf5-56ef-41bf-a7f9-dc192fe9ee5a">
+<span class="eqno">(1)<a class="headerlink" href="#equation-f8a66cf5-56ef-41bf-a7f9-dc192fe9ee5a" title="Permalink to this equation">#</a></span>\[\begin{align}
     \vec{n} &amp;= \vec{n}_0 + \mathbf{Q} \vec{x} \\
     \vec{x} &amp;= \mathbf{R}^{\mathsf{T}} (\vec{n} - \vec{n}_0)
 \end{align}\]</div>
@@ -803,7 +766,17 @@ the change in composition per unit cell going one unit distance along each indep
     0  Ge(2)     SiGe  Si(a)Ge(2-a)
     1  Si(2)     SiGe  Si(2-a)Ge(a)
 
-No composition axes selected
+Currently selected composition axes: 0
+
+Parametric composition:
+  comp(a) = 0.5*comp_n(Si)  - 0.5*(comp_n(Ge) - 2) 
+
+Composition:
+  comp_n(Si) = 1*comp(a) 
+  comp_n(Ge) = 2 - 1*comp(a) 
+
+Parametric chemical potentials:
+  param_chem_pot(a) = chem_pot(Si) - chem_pot(Ge)
 </pre></div>
 </div>
 </div>
@@ -903,7 +876,8 @@ Parametric chemical potentials:
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ConfigurationName       AtomType                                CompPerUnitcell [Si, Ge]      ParamComposition    
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ConfigurationName       AtomType                                CompPerUnitcell [Si, Ge]      ParamComposition
+
 ------------------------------------------------------------------------------------------------------------------------
 SCEL1_1_1_1_0_0_0/0     [&#39;Si&#39;, &#39;Si&#39;]                            [2. 0.]                       [2.]                
 SCEL1_1_1_1_0_0_0/1     [&#39;Ge&#39;, &#39;Si&#39;]                            [1. 1.]                       [1.]                
@@ -925,7 +899,7 @@ SCEL3_3_1_1_0_2_2/6     [&#39;Ge&#39;, &#39;Ge&#39;, &#39;Si&#39;, &#39;Si&#39;,
 SCEL3_3_1_1_0_2_2/12    [&#39;Ge&#39;, &#39;Ge&#39;, &#39;Si&#39;, &#39;Si&#39;, &#39;Ge&#39;, &#39;Ge&#39;]    [0.66666667 1.33333333]       [0.66666667]        
 SCEL3_3_1_1_0_2_2/3     [&#39;Ge&#39;, &#39;Ge&#39;, &#39;Si&#39;, &#39;Ge&#39;, &#39;Si&#39;, &#39;Si&#39;]    [1. 1.]                       [1.]                
 SCEL3_3_1_1_0_2_2/11    [&#39;Ge&#39;, &#39;Ge&#39;, &#39;Si&#39;, &#39;Ge&#39;, &#39;Si&#39;, &#39;Ge&#39;]    [0.66666667 1.33333333]       [0.66666667]        
-SCEL3_3_1_1_0_2_2/7     [&#39;Ge&#39;, &#39;Ge&#39;, &#39;Si&#39;, &#39;Ge&#39;, &#39;Ge&#39;, &#39;Si&#39;]    [0.66666667 1.33333333]       [0.66666667]        
+SCEL3_3_1_1_0_2_2/7     [&#39;Ge&#39;, &#39;Ge&#39;, &#39;Si&#39;, &#39;Ge&#39;, &#39;Ge&#39;, &#39;Si&#39;]    [0.66666667 1.33333333]       [0.66666667]
 </pre></div>
 </div>
 </div>
@@ -978,220 +952,262 @@ SCEL3_3_1_1_0_2_2/7     [&#39;Ge&#39;, &#39;Ge&#39;, &#39;Si&#39;, &#39;Ge&#39;,
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL1_1_1_1_0_0_0/0/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL1_1_1_1_0_0_0/1/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL1_1_1_1_0_0_0/2/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL2_2_1_1_0_1_1/0/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL2_2_1_1_0_1_1/3/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL2_2_1_1_0_1_1/1/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL2_2_1_1_0_1_1/2/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL2_2_1_1_0_0_1/0/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL2_2_1_1_0_0_1/1/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL2_2_1_1_0_0_1/2/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_2/0/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_2/9/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_2/5/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_2/2/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_2/1/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_2/10/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_2/6/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_2/12/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_2/3/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_2/11/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_2/7/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_2/4/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_2/8/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_0_2/0/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_0_2/5/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_0_2/2/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_0_2/1/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_0_2/6/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_0_2/9/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_0_2/3/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_0_2/7/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_0_2/4/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_0_2/8/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_1/0/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_1/5/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_1/2/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_1/1/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_1/6/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_1/9/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_1/3/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_1/7/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_1/4/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_1/8/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/0/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/24/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/15/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/8/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/3/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/10/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/5/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/1/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/25/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/16/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/32/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/9/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/29/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/20/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/4/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/27/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/18/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/12/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/2/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/26/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/17/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/33/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/11/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/30/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/21/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/35/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/6/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/28/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/19/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/34/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/13/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/31/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/22/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/7/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/14/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/23/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/0/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/18/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/7/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/2/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/8/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/4/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/11/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/3/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/19/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/13/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/1/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/12/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/9/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/20/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/15/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/22/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/5/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/14/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/10/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/21/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/16/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/6/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/17/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/0/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/3/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/5/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/1/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/4/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/11/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/8/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/2/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/6/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/12/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/9/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/13/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/7/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/10/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/14/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/0/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/24/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/15/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/8/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/3/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/10/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/5/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/1/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/25/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/16/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/32/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/9/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/29/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/20/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/4/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/27/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/18/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/12/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/2/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/26/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/17/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/33/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/11/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/30/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/21/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/35/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/6/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/28/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/19/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/34/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/13/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/31/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/22/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/7/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/14/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/23/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/0/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/14/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/8/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/3/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/9/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/5/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/1/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/15/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/25/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/4/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/21/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/16/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/11/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/2/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/20/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/10/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/23/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/6/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/22/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/17/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/26/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/12/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/24/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/18/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/7/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/13/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/19/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/0/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/13/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/3/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/5/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/1/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/19/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/8/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/22/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/4/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/20/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/14/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/10/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/2/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/9/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/16/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/6/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/21/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/15/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/11/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/23/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/17/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/7/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/12/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/18/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_1_1_0/0/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_1_1_0/2/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_1_1_0/3/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_1_1_0/7/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_1_1_0/1/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_1_1_0/4/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_1_1_0/6/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_1_1_0/8/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_1_1_0/5/structure.vasp
-write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_1_1_0/9/structure.vasp
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL1_1_1_1_0_0_0/0/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL1_1_1_1_0_0_0/1/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL1_1_1_1_0_0_0/2/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL2_2_1_1_0_1_1/0/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL2_2_1_1_0_1_1/3/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL2_2_1_1_0_1_1/1/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL2_2_1_1_0_1_1/2/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL2_2_1_1_0_0_1/0/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL2_2_1_1_0_0_1/1/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL2_2_1_1_0_0_1/2/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_2/0/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_2/9/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_2/5/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_2/2/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_2/1/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_2/10/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_2/6/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_2/12/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_2/3/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_2/11/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_2/7/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_2/4/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_2/8/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_0_2/0/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_0_2/5/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_0_2/2/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_0_2/1/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_0_2/6/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_0_2/9/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_0_2/3/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_0_2/7/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_0_2/4/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_0_2/8/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_1/0/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_1/5/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_1/2/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_1/1/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_1/6/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_1/9/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_1/3/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_1/7/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_1/4/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL3_3_1_1_0_2_1/8/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/0/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/24/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/15/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/8/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/3/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/10/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/5/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/1/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/25/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/16/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/32/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/9/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/29/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/20/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/4/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/27/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/18/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/12/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/2/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/26/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/17/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/33/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/11/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/30/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/21/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/35/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/6/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/28/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/19/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/34/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/13/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/31/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/22/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/7/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/14/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_2/23/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/0/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/18/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/7/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/2/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/8/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/4/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/11/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/3/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/19/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/13/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/1/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/12/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/9/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/20/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/15/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/22/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/5/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/14/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/10/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/21/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/16/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/6/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_0_1_0/17/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/0/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/3/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/5/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/1/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/4/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/11/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/8/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/2/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/6/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/12/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/9/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/13/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/7/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/10/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_2_1/14/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/0/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/24/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/15/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/8/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/3/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/10/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/5/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/1/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/25/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/16/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/32/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/9/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/29/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/20/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/4/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/27/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/18/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/12/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/2/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/26/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/17/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/33/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/11/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/30/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/21/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/35/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/6/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/28/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/19/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/34/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/13/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/31/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/22/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/7/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/14/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_0/23/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/0/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/14/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/8/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/3/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/9/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/5/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/1/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/15/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/25/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/4/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/21/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/16/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/11/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/2/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/20/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/10/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/23/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/6/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/22/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/17/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/26/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/12/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/24/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/18/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/7/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/13/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_1_0/19/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/0/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/13/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/3/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/5/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/1/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/19/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/8/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/22/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/4/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/20/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/14/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/10/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/2/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/9/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/16/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/6/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/21/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/15/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/11/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/23/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/17/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/7/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/12/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_4_1_1_0_0_3/18/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_1_1_0/0/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_1_1_0/2/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_1_1_0/3/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_1_1_0/7/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_1_1_0/1/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_1_1_0/4/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_1_1_0/6/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_1_1_0/8/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_1_1_0/5/structure.vasp
+skipping: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_1_1_1_0/9/structure.vasp
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="view-configurations">
+<h2>View configurations<a class="headerlink" href="#view-configurations" title="Link to this heading">#</a></h2>
+<p><strong>This step</strong>:</p>
+<ul class="simple">
+<li><p>Starts the casm-vis servers</p></li>
+<li><p>Adds the Si-Ge project to the casm-vis project list</p></li>
+<li><p>Opens the “main” enumeration configuration set visualization in the default browser</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">project</span><span class="o">.</span><span class="n">vis</span><span class="o">.</span><span class="n">enum</span><span class="p">(</span><span class="s2">&quot;main&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>casm-vis bokeh server already running with PID 60167.
+casm-vis api server already running with PID 60716.
+casm-vis vis server already running with PID 60717.
+Opening casm-vis (http://localhost:3000) in your browser...
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="stop-casm-vis-servers">
+<h2>Stop casm-vis servers<a class="headerlink" href="#stop-casm-vis-servers" title="Link to this heading">#</a></h2>
+<p>When done, the casm-vis servers can be stopped with one of:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>project.vis.stop()
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>!casm-vis stop -a
+</pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># project.vis.stop()</span>
 </pre></div>
 </div>
 </div>
@@ -1253,6 +1269,8 @@ write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-parametric-composition-axes">Set parametric composition axes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iterate-over-configurations-using-configselection">Iterate over configurations using ConfigSelection</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#write-structure-files">Write structure files</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#view-configurations">View configurations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stop-casm-vis-servers">Stop casm-vis servers</a></li>
 </ul>
   </nav></div>
 
@@ -1299,7 +1317,7 @@ write: SiGe_occ/enumerations/enum.main/training_data/calctype.default/SCEL4_2_2_
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
     <br/>
   </p>
 </div>

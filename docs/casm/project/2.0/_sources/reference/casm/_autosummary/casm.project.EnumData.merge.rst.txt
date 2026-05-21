@@ -1,6 +1,0 @@
-merge
-=====
-
-.. currentmodule:: casm.project
-
-.. automethod:: EnumData.merge

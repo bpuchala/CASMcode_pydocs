@@ -1,6 +1,0 @@
-enum\_dir
-=========
-
-.. currentmodule:: casm.project
-
-.. autoattribute:: EnumData.enum_dir

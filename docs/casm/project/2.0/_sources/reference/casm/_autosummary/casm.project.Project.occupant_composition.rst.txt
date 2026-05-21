@@ -1,6 +1,0 @@
-occupant\_composition
-=====================
-
-.. currentmodule:: casm.project
-
-.. autoattribute:: Project.occupant_composition

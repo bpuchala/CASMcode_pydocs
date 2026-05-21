@@ -1,6 +1,0 @@
-proj
-====
-
-.. currentmodule:: casm.project.commands
-
-.. autoattribute:: EnumCommand.proj

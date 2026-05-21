@@ -1,6 +1,0 @@
-all\_eci
-========
-
-.. currentmodule:: casm.project
-
-.. automethod:: DirectoryStructure.all_eci

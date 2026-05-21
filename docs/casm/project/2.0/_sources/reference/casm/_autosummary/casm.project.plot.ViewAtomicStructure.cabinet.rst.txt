@@ -1,6 +1,0 @@
-cabinet
-=======
-
-.. currentmodule:: casm.project.plot
-
-.. autoattribute:: ViewAtomicStructure.cabinet

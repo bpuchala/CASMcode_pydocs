@@ -1,6 +1,0 @@
-property\_dir
-=============
-
-.. currentmodule:: casm.project
-
-.. automethod:: DirectoryStructure.property_dir

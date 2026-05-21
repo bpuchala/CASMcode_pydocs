@@ -1,0 +1,49 @@
+libcasm.group.sqlite\_cache
+===========================
+
+.. automodule:: libcasm.group.sqlite_cache
+
+  
+  
+  
+
+  
+  
+  .. rubric:: Functions
+
+  .. autosummary::
+    :signatures: short
+    :toctree:
+    :template: custom-function-template.rst
+  
+    clear_all
+    delete_value
+    get_casm_config_dir
+    get_local_cache_path
+    get_user_cache_path
+    get_value
+    init_db
+    store_kv
+  
+  
+
+  
+  
+  .. rubric:: Classes
+
+  .. autosummary::
+    :signatures: short
+    :toctree:
+    :template: custom-class-template.rst
+  
+    LocalCache
+    UserCache
+  
+  
+
+  
+  
+  
+
+
+

@@ -1,0 +1,23 @@
+AxisIrrepInfo
+=============
+
+.. currentmodule:: libcasm.configuration
+
+.. autoclass:: AxisIrrepInfo
+  :show-inheritance:
+
+  
+  
+  .. rubric:: Methods
+
+  .. autosummary::
+    :signatures: short
+    :toctree:
+    :template: custom-function-template.rst
+  
+  
+  
+
+  
+  
+    

@@ -1,0 +1,7 @@
+{
+  "atoms": [
+    {"coordinate": [-0.4, 0.0, 0.0], "name": "A"},
+    {"coordinate": [ 0.4, 0.0, 0.0], "name": "A"}
+  ],
+  "name": "A2_dumbbell"
+}

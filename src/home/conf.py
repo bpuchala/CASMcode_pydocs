@@ -98,8 +98,19 @@ extensions = [
     "sphinx.ext.intersphinx",
     "sphinx_copybutton",
     "sphinx_design",
+    "sphinxext.opengraph",
     "numpydoc",
 ]
+
+# OpenGraph meta tags — render a sensible preview when a docs page is shared
+# on Twitter/X, LinkedIn, Bluesky, Mastodon, Slack, etc. Pairs with the
+# manual share buttons in src/home/index.rst.
+ogp_site_url = "https://prisms-center.github.io/CASMcode_pydocs/home/"
+ogp_site_name = "CASM"
+ogp_description_length = 200
+# Set when a hero/social image is available. Should be a raster PNG/JPEG
+# (most social platforms don't render SVG OG images).
+ogp_image = "https://prisms-center.github.io/CASMcode_pydocs/home/_static/og_image.png"
 
 # bibtex_bibfiles = ["refs.bib"]
 
@@ -161,6 +172,13 @@ suppress_warnings = [
 # a list of builtin themes.
 #
 html_theme = "pydata_sphinx_theme"
+
+# Add loading="lazy" to every <img>. Sphinx's html_image_loading wrapper was
+# removed in 9.x; override the underlying docutils setting directly. Big win
+# on the publications page (170 cards, ~5.5 MB of images otherwise eager-
+# loaded); benign on other pages — browsers still eager-load above-the-fold
+# images regardless of the attribute.
+html_writer_settings = {"image_loading": "lazy"}
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the

@@ -1,6 +1,0 @@
-config\_json
-============
-
-.. currentmodule:: casm.project
-
-.. automethod:: DirectoryStructure.config_json

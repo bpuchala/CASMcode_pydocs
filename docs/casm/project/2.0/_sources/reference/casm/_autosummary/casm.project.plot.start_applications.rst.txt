@@ -1,6 +1,0 @@
-start\_applications
-===================
-
-.. currentmodule:: casm.project.plot
-
-.. autofunction:: start_applications

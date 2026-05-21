@@ -1,6 +1,0 @@
-meta
-====
-
-.. currentmodule:: casm.project
-
-.. autoattribute:: EnumData.meta

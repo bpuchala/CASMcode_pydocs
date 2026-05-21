@@ -1,0 +1,526 @@
+.. _project-dir:
+
+CASM Project Directory
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <dl class="casm-list">
+    <div style="display: flex; flex-direction: row; align-items: center; gap: 5px;">
+        <dt class="casm-part">Location:</dt>
+        <dd class="casm-part"><code>&lt;project&gt;/</code></dd>
+    </div>
+    <dt class="casm-part">Contents:</dt>
+    <dd class="casm-part">
+    <table class="casm-table">
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Format</th>
+        </tr>
+        <tr>
+            <td><code>.casm/</code></td>
+            <td>CASM project settings and data</td>
+            <td><a class="only-light reference internal image-reference" href="#casm-dir"><img alt="link icon" class="only-light" src="../_static/link-16.svg"></a>
+            <a class="only-dark reference internal image-reference" href="#casm-dir"><img alt="link icon" class="only-dark" src="../_static/link-16-dark.svg"></a>
+        </tr>
+        <tr>
+            <td><code>basis_sets/</code></td>
+            <td>Basis set input, results, and generated code</td>
+            <td><a class="only-light reference internal image-reference" href="#basis-sets-dir"><img alt="link icon" class="only-light" src="../_static/link-16.svg"></a>
+            <a class="only-dark reference internal image-reference" href="#basis-sets-dir"><img alt="link icon" class="only-dark" src="../_static/link-16-dark.svg"></a>
+        </tr>
+        <tr>
+            <td><code>calculation_settings/</code></td>
+            <td>Global calculation settings</td>
+            <td><a class="only-light reference internal image-reference" href="#calculation-settings-dir"><img alt="link icon" class="only-light" src="../_static/link-16.svg"></a>
+            <a class="only-dark reference internal image-reference" href="#calculation-settings-dir"><img alt="link icon" class="only-dark" src="../_static/link-16-dark.svg"></a>
+        </tr>
+        <tr>
+            <td><code>enumerations/</code></td>
+            <td>Enumerated configurations, events, etc.</td>
+            <td><a class="only-light reference internal image-reference" href="#enum-dir"><img alt="link icon" class="only-light" src="../_static/link-16.svg"></a>
+            <a class="only-dark reference internal image-reference" href="#enum-dir"><img alt="link icon" class="only-dark" src="../_static/link-16-dark.svg"></a>
+        </tr>
+        <tr>
+            <td><code>fits/</code></td>
+            <td>Fitting data</td>
+            <td><a class="only-light reference internal image-reference" href="#fits-dir"><img alt="link icon" class="only-light" src="../_static/link-16.svg"></a>
+            <a class="only-dark reference internal image-reference" href="#fits-dir"><img alt="link icon" class="only-dark" src="../_static/link-16-dark.svg"></a>
+        </tr>
+        <tr>
+            <td><code>imports/</code></td>
+            <td>Structure import data</td>
+            <td><a class="only-light reference internal image-reference" href="#imports-dir"><img alt="link icon" class="only-light" src="../_static/link-16.svg"></a>
+            <a class="only-dark reference internal image-reference" href="#imports-dir"><img alt="link icon" class="only-dark" src="../_static/link-16-dark.svg"></a>
+        </tr>
+        <tr>
+            <td><code>symmetry/</code></td>
+            <td>Symmetry analysis results</td>
+            <td><a class="only-light reference internal image-reference" href="#symmetry-dir"><img alt="link icon" class="only-light" src="../_static/link-16.svg"></a>
+            <a class="only-dark reference internal image-reference" href="#symmetry-dir"><img alt="link icon" class="only-dark" src="../_static/link-16-dark.svg"></a>
+        </tr>
+        <tr>
+            <td><code>systems/</code></td>
+            <td>System parameters for Monte Carlo simulations</td>
+            <td><a class="only-light reference internal image-reference" href="#systems-dir"><img alt="link icon" class="only-light" src="../_static/link-16.svg"></a>
+            <a class="only-dark reference internal image-reference" href="#systems-dir"><img alt="link icon" class="only-dark" src="../_static/link-16-dark.svg"></a>
+        </tr>
+        <tr>
+            <td><code>plot_settings/</code></td>
+            <td>Plot settings and saved views</td>
+            <td><a class="only-light reference internal image-reference" href="#plot-settings-dir"><img alt="link icon" class="only-light" src="../_static/link-16.svg"></a>
+            <a class="only-dark reference internal image-reference" href="#plot-settings-dir"><img alt="link icon" class="only-dark" src="../_static/link-16-dark.svg"></a>
+        </tr>
+    </table>
+    </dd>
+    </dl>
+
+.. _casm-dir:
+
+CASM project settings and data
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <dl class="casm-list">
+    <div style="display: flex; flex-direction: row; align-items: center; gap: 5px;">
+        <dt class="casm-part">Location:</dt>
+        <dd class="casm-part"><code>&lt;project&gt;/.casm/</code></dd>
+    </div>
+    <dt class="casm-part">Contents:</dt>
+    <dd class="casm-part">
+    <table class="casm-table">
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Format</th>
+        </tr>
+        <tr>
+            <td><code>prim.json</code></td>
+            <td>Primitive crystal structure and allowed degrees of freedom (DoF)</td>
+            <td><a href="#prim">Prim</a></td>
+        </tr>
+        <tr>
+            <td><code>chemical_composition_axes.json</code></td>
+            <td>Chemical composition axes</td>
+            <td><a href="TODO">Composition Axes</a></td>
+        </tr>
+        <tr>
+            <td><code>occupant_composition_axes.json</code></td>
+            <td>Occupant composition axes</td>
+            <td><a href="TODO">Composition Axes</a></td>
+        </tr>
+        <tr>
+            <td><code>project_settings.json</code></td>
+            <td>CASM project settings</td>
+            <td><a href="TODO">Project Settings</a></td>
+        </tr>
+    </table>
+    </dd>
+    <dt class="casm-part">Deprecated contents:</dt>
+    <dd class="casm-part">
+    <table class="casm-table">
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Format</th>
+        </tr>
+        <tr>
+            <td><code>composition_axes.json</code></td>
+            <td>Chemical composition axes, for v1 compatibility.</td>
+            <td><a href="TODO">Composition Axes</a></td>
+        </tr>
+    </table>
+    </dd>
+    </dl>
+
+.. _symmetry-dir:
+
+Symmetry analysis results
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <dl class="casm-list">
+    <div style="display: flex; flex-direction: row; align-items: center; gap: 5px;">
+        <dt class="casm-part">Location:</dt>
+        <dd class="casm-part"><code>&lt;project&gt;/symmetry/</code></dd>
+    </div>
+    <dt class="casm-part">Contents:</dt>
+    <dd class="casm-part">
+    <table class="casm-table">
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Format</th>
+        </tr>
+        <tr>
+            <td><code>lattice_point_group.json</code></td>
+            <td>Lattice point group symmetry operations</td>
+            <td><a href="TODO">SymGroup</a></td>
+        </tr>
+        <tr>
+            <td><code>factor_group.json</code></td>
+            <td>Crystal factor group symmetry operations</td>
+            <td><a href="TODO">SymGroup</a></td>
+        </tr>
+        <tr>
+            <td><code>crystal_point_group.json</code></td>
+            <td>Crystal point group symmetry operations</td>
+            <td><a href="TODO">SymGroup</a></td>
+        </tr>
+    </table>
+    </dd>
+    </dl>
+
+.. _basis-sets-dir:
+
+Basis set input, results, and generated code
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <dl class="casm-list">
+    <div style="display: flex; flex-direction: row; align-items: center; gap: 5px;">
+        <dt class="casm-part">Location:</dt>
+        <dd class="casm-part"><code>&lt;project&gt;/basis_sets/bset.&lt;bset_id&gt;/</code></dd>
+    </div>
+    <dt class="casm-part">Contents:</dt>
+    <dd class="casm-part">
+    <table class="casm-table">
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Format</th>
+        </tr>
+        <tr>
+            <td><code>bspecs.json</code></td>
+            <td>Basis function specs</td>
+            <td><a href="TODO">BSpecs</a></td>
+        </tr>
+        <tr>
+            <td><code>basis.json</code></td>
+            <td>Basis functions</td>
+            <td><a href="TODO">Basis</a></td>
+        </tr>
+        <tr>
+            <td><code>equivalents_info.json</code></td>
+            <td>Equivalents info for local correlations</td>
+            <td><a href="TODO">EquivalentsInfo</a></td>
+        </tr>
+        <tr>
+            <td><code>cluster_functions.json.gz</code></td>
+            <td>Cluster functions</td>
+            <td><a href="TODO">ClusterFunctions</a></td>
+        </tr>
+        <tr>
+            <td><code>variables.json.gz</code></td>
+            <td>Clexulator variables</td>
+            <td><a href="TODO">ClexulatorVariables</a></td>
+        </tr>
+        <tr>
+            <td><code>&lt;projectname&gt;_Clexulator_&lt;bset_id&gt;.cc</code></td>
+            <td>Clexulator C++ source file</td>
+            <td><a href="TODO">Clexulator source</a></td>
+        </tr>
+        <tr>
+            <td><code>&lt;projectname&gt;_Clexulator_&lt;bset_id&gt;.o</code></td>
+            <td>Compiled clexulator object file</td>
+            <td><a href="TODO">Clexulator object</a></td>
+        </tr>
+        <tr>
+            <td><code>&lt;projectname&gt;_Clexulator_&lt;bset_id&gt;.so</code></td>
+            <td>Compiled clexulator shared library</td>
+            <td><a href="TODO">Clexulator shared lib</a></td>
+        </tr>
+    </table>
+    </dd>
+    </dl>
+
+.. _calculation-settings-dir:
+
+Global calculation settings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <dl class="casm-list">
+    <div style="display: flex; flex-direction: row; align-items: center; gap: 5px;">
+        <dt class="casm-part">Location:</dt>
+        <dd class="casm-part"><code>&lt;project&gt;/calculation_settings/calctype.&lt;calctype_id&gt;/</code></dd>
+    </div>
+    <dt class="casm-part">Contents:</dt>
+    <dd class="casm-part">
+    <table class="casm-table">
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Format</th>
+        </tr>
+        <tr>
+            <td><code>ref.&lt;ref_id&gt;/chemical_reference.json</code></td>
+            <td>Chemical reference energies</td>
+            <td><a href="TODO">ChemicalReference</a></td>
+        </tr>
+    </table>
+    </dd>
+    </dl>
+
+.. _enum-dir:
+
+Enumeration data
+^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <dl class="casm-list">
+    <div style="display: flex; flex-direction: row; align-items: center; gap: 5px;">
+        <dt class="casm-part">Location:</dt>
+        <dd class="casm-part"><code>&lt;project&gt;/enumerations/enum.&lt;enum_id&gt;/</code></dd>
+    </div>
+    <dt class="casm-part">Contents:</dt>
+    <dd class="casm-part">
+    <table class="casm-table">
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Format</th>
+        </tr>
+        <tr>
+            <td><code>meta.json</code></td>
+            <td>Description of the enumeration</td>
+            <td><a class="only-light reference internal image-reference" href="#meta-file"><img alt="link icon" class="only-light" src="../_static/link-16.svg"></a>
+            <a class="only-dark reference internal image-reference" href="#meta-file"><img alt="link icon" class="only-dark" src="../_static/link-16-dark.svg"></a>
+        </tr>
+        <tr>
+            <td><code>scel_set.json</code></td>
+            <td>Enumerated supercells, as a set</td>
+            <td><a href="TODO">SupercellSet</a></td>
+        </tr>
+        <tr>
+            <td><code>scel_list.json</code></td>
+            <td>Enumerated supercells, as a list</td>
+            <td><a href="TODO">list[SupercellSet]</a></td>
+        </tr>
+        <tr>
+            <td><code>config_set.json</code></td>
+            <td>Enumerated configurations, as a set</td>
+            <td><a href="TODO">ConfigurationSet</a></td>
+        </tr>
+        <tr>
+            <td><code>config_list.json</code></td>
+            <td>Enumerated configurations, as a list</td>
+            <td><a href="TODO">list[Configuration]</a></td>
+        </tr>
+        <tr>
+            <td><code>training_data/</code></td>
+            <td>Calculation input and output files</td>
+            <td><a class="only-light reference internal image-reference" href="#training-data-dir"><img alt="link icon" class="only-light" src="../_static/link-16.svg"></a>
+            <a class="only-dark reference internal image-reference" href="#training-data-dir"><img alt="link icon" class="only-dark" src="../_static/link-16-dark.svg"></a>
+        </tr>
+        <tr>
+            <td><code>kmc_events/</code></td>
+            <td>Enumerated KMC events</td>
+            <td><a class="only-light reference internal image-reference" href="#kmc-events-dir"><img alt="link icon" class="only-light" src="../_static/link-16.svg"></a>
+            <a class="only-dark reference internal image-reference" href="#kmc-events-dir"><img alt="link icon" class="only-dark" src="../_static/link-16-dark.svg"></a>
+        </tr>
+    </table>
+    </dd>
+    </dl>
+
+.. _training-data-dir:
+
+Calculation input and output files
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <dl class="casm-list">
+    <div style="display: flex; flex-direction: row; align-items: center; gap: 5px;">
+        <dt class="casm-part">Location:</dt>
+        <dd class="casm-part"><code>&lt;project&gt;/enumerations/enum.&lt;enum_id&gt;/training_data/calctype.&lt;calctype_id&gt;/&lt;configname&gt;/</code></dd>
+    </div>
+    <dt class="casm-part">Contents:</dt>
+    <dd class="casm-part">
+    <table class="casm-table">
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Format</th>
+        </tr>
+        <tr>
+            <td><code>config.json</code></td>
+            <td>Configuration (occupation and continuous DoF)</td>
+            <td><a href="TODO">Configuration</a></td>
+        </tr>
+        <tr>
+            <td><code>structure.json</code></td>
+            <td>Ideal crystal structure corresponding to the configuration</td>
+            <td><a href="TODO">Structure</a></td>
+        </tr>
+        <tr>
+            <td><code>structure_with_properties.json</code></td>
+            <td>Crystal structure with calculated properties</td>
+            <td><a href="TODO">StructureWithProperties</a></td>
+        </tr>
+        <tr>
+            <td><code>POS</code></td>
+            <td>VASP POSCAR file for the configuration</td>
+            <td><a href="TODO">POSCAR</a></td>
+        </tr>
+    </table>
+    </dd>
+    </dl>
+
+.. _kmc-events-dir:
+
+Enumerated KMC events
+^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <dl class="casm-list">
+    <div style="display: flex; flex-direction: row; align-items: center; gap: 5px;">
+        <dt class="casm-part">Location:</dt>
+        <dd class="casm-part"><code>&lt;project&gt;/enumerations/enum.&lt;enum_id&gt;/kmc_events/event.&lt;eventname&gt;/</code></dd>
+    </div>
+    <dt class="casm-part">Contents:</dt>
+    <dd class="casm-part">
+    <table class="casm-table">
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Format</th>
+        </tr>
+        <tr>
+            <td><code>event.json</code></td>
+            <td>KMC event definition</td>
+            <td><a href="TODO">Event</a></td>
+        </tr>
+        <tr>
+            <td><code>equivalents_info.json</code></td>
+            <td>Equivalents info for the event</td>
+            <td><a href="TODO">EquivalentsInfo</a></td>
+        </tr>
+        <tr>
+            <td><code>local_configuration_list.json</code></td>
+            <td>List of local configurations for the event</td>
+            <td><a href="TODO">LocalConfigurationList</a></td>
+        </tr>
+    </table>
+    </dd>
+    </dl>
+
+.. _imports-dir:
+
+Structure import data
+^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <dl class="casm-list">
+    <div style="display: flex; flex-direction: row; align-items: center; gap: 5px;">
+        <dt class="casm-part">Location:</dt>
+        <dd class="casm-part"><code>&lt;project&gt;/imports/import.&lt;import_id&gt;/</code></dd>
+    </div>
+    <dt class="casm-part">Contents:</dt>
+    <dd class="casm-part">
+    <table class="casm-table">
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Format</th>
+        </tr>
+        <tr>
+            <td><code>settings.json</code></td>
+            <td>Structure import settings</td>
+            <td><a href="TODO">ImportSettings</a></td>
+        </tr>
+    </table>
+    </dd>
+    </dl>
+
+.. _fits-dir:
+
+Fitting data
+^^^^^^^^^^^^
+
+.. raw:: html
+
+    <dl class="casm-list">
+    <div style="display: flex; flex-direction: row; align-items: center; gap: 5px;">
+        <dt class="casm-part">Location:</dt>
+        <dd class="casm-part"><code>&lt;project&gt;/fits/fit.&lt;fit_id&gt;/</code></dd>
+    </div>
+    <dt class="casm-part">Contents:</dt>
+    <dd class="casm-part">
+    <table class="casm-table">
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Format</th>
+        </tr>
+    </table>
+    </dd>
+    </dl>
+
+.. _systems-dir:
+
+System parameters for Monte Carlo simulations
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <dl class="casm-list">
+    <div style="display: flex; flex-direction: row; align-items: center; gap: 5px;">
+        <dt class="casm-part">Location:</dt>
+        <dd class="casm-part"><code>&lt;project&gt;/systems/system.&lt;system_id&gt;/</code></dd>
+    </div>
+    <dt class="casm-part">Contents:</dt>
+    <dd class="casm-part">
+    <table class="casm-table">
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Format</th>
+        </tr>
+        <tr>
+            <td><code>system.json</code></td>
+            <td>System parameters</td>
+            <td><a href="TODO">System</a></td>
+        </tr>
+    </table>
+    </dd>
+    </dl>
+
+.. _plot-settings-dir:
+
+Plot settings and saved views
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <dl class="casm-list">
+    <div style="display: flex; flex-direction: row; align-items: center; gap: 5px;">
+        <dt class="casm-part">Location:</dt>
+        <dd class="casm-part"><code>&lt;project&gt;/plot_settings/</code></dd>
+    </div>
+    <dt class="casm-part">Contents:</dt>
+    <dd class="casm-part">
+    <table class="casm-table">
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Format</th>
+        </tr>
+        <tr>
+            <td><code>views/</code></td>
+            <td>Saved casm-vis view states</td>
+            <td><a class="only-light reference internal image-reference" href="TODO"><img alt="link icon" class="only-light" src="../_static/link-16.svg"></a>
+            <a class="only-dark reference internal image-reference" href="TODO"><img alt="link icon" class="only-dark" src="../_static/link-16-dark.svg"></a>
+        </tr>
+    </table>
+    </dd>
+    </dl>
+

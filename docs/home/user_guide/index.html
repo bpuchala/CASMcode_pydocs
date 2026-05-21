@@ -7,6 +7,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="User Guide" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://prisms-center.github.io/CASMcode_pydocs/home/user_guide/index.html" />
+<meta property="og:site_name" content="CASM" />
+<meta property="og:description" content="CASM logo CASM logo CASM (Clusters Approach to Statistical Mechanics) is an open source software suite designed to perform first-principles statistical mechanical studies of multi-component crystal..." />
+<meta property="og:image" content="https://prisms-center.github.io/CASMcode_pydocs/home/_static/og_image.png" />
+<meta property="og:image:alt" content="CASM" />
+<meta name="description" content="CASM logo CASM logo CASM (Clusters Approach to Statistical Mechanics) is an open source software suite designed to perform first-principles statistical mechanical studies of multi-component crystal..." />
 
     <title>User Guide &#8212; CASM  documentation</title>
   
@@ -33,7 +41,10 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=da4e430f" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=9efdb074" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/featured_random.css?v=632cc064" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/tom-select.bootstrap5.min.css?v=900ec6fa" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/publications_list.css?v=fe3e4b86" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -48,6 +59,11 @@
     <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/index';</script>
+    <script src="../_static/js/pkg_nav_labels.js?v=f5d72ee4"></script>
+    <script src="../_static/js/featured_random.js?v=d8968cf8"></script>
+    <script src="../_static/js/list.min.js?v=1c81fffb"></script>
+    <script src="../_static/js/tom-select.complete.min.js?v=69668b3b"></script>
+    <script src="../_static/js/publications_list.js?v=4502ef88"></script>
     <link rel="icon" href="../_static/favicon-16x16.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -168,11 +184,28 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../contributing/index.html">
+  <a class="nav-link nav-internal" href="../publications/index.html">
+    Publications
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../contributing/index.html">
     Contributing
   </a>
 </li>
 
+                </ul>
+            </li>
+            
   </ul>
 </nav></div>
       
@@ -271,6 +304,13 @@
 
 
 <li class="nav-item ">
+  <a class="nav-link nav-internal" href="../publications/index.html">
+    Publications
+  </a>
+</li>
+
+
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="../contributing/index.html">
     Contributing
   </a>
@@ -305,10 +345,8 @@
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="packages.html">Packages</a></li>
 </ul>
 </div>
 </nav></div>
@@ -372,16 +410,21 @@
 </a>
 <div class="extra-space-36"></div><section id="user-guide">
 <h1>User Guide<a class="headerlink" href="#user-guide" title="Link to this heading">#</a></h1>
-<p>TODO</p>
 <div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="installation.html#configuration">Configuration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="packages.html">Packages</a></li>
-</ul>
 </div>
+<p>CASM (Clusters Approach to Statistical Mechanics) is an open source software suite designed to perform first-principles statistical mechanical studies of multi-component crystalline solids. CASM uses group theoretic techniques that take full advantage of crystal symmetry in order to rigorously construct effective Hamiltonians for almost arbitrary degrees of freedom in crystalline solids. Examples include:</p>
+<ul class="simple">
+<li><p>cluster expansions for configurational disorder in multi-component solids,</p></li>
+<li><p>coupled Hamiltonians of configurational disorder and homogeneous strain,</p></li>
+<li><p>lattice-dynamical effective Hamiltonians for vibrational degrees of freedom involved in structural phase transitions.</p></li>
+</ul>
+<p>CASM consists of several Python packages, some are pure Python packages and some are interfaces to libraries written in C++. These provide tools to:</p>
+<ul class="simple">
+<li><p>automate the construction and parameterization of effective Hamiltonians,</p></li>
+<li><p>interface with first-principles electronic structure codes,</p></li>
+<li><p>build highly optimized (kinetic) Monte Carlo codes to predict finite-temperature thermodynamic and kinetic properties.</p></li>
+</ul>
+<p>This user guide focuses on using the CASM software suite as a whole. For individual packages, see the <a class="reference internal" href="../reference/packages_reference.html#public-api-reference"><span class="std std-ref">CASM Python packages public API reference</span></a>.</p>
 </section>
 
 
@@ -442,7 +485,7 @@
 
   <p class="copyright">
     
-      © Copyright 2024, CASM Developers.
+      © Copyright 2026, CASM Developers.
       <br/>
     
   </p>

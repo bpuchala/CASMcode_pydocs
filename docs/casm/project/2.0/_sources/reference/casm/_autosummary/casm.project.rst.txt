@@ -20,6 +20,7 @@
     make_symmetrized_lattice
     make_symmetrized_prim
     make_uncalculated_fitting_data
+    print_asymmetric_units
     project_path
     symgroup_to_dict_with_group_classification
   
@@ -66,4 +67,5 @@
   structure_import
   sym
   system
+  vis
 

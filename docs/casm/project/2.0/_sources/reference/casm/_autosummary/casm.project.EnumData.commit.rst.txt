@@ -1,6 +1,0 @@
-commit
-======
-
-.. currentmodule:: casm.project
-
-.. automethod:: EnumData.commit

@@ -1,0 +1,6 @@
+enum\_local\_config\_file
+=========================
+
+.. currentmodule:: casm.project
+
+.. automethod:: DirectoryStructure.enum_local_config_file

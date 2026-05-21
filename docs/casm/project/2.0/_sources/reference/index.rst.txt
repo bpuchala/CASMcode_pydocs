@@ -3,7 +3,13 @@ Reference
 =========
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 4
+    :hidden:
 
-    CASM project structure <../usage/project_structure>
-    API Reference <casm/index>
+    casm/index
+    project_structure
+
+This section provides:
+
+- the :ref:`Python packages public API reference <public_api_reference>`, and
+- the :ref:`CASM project directory structure reference <project_structure>`.

@@ -32,9 +32,10 @@
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=1038f348" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=5120c660" />
   
   <!-- So that users can add custom icons -->
   <script src="../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -43,14 +44,15 @@
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../../../_static/documentation_options.js?v=df8f2d03"></script>
-    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../../_static/copybutton.js?v=644e031c"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../../../_static/togglebutton.js?v=1ae7504c"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'usage/examples/enum_occ_by_supercell_Ising/enum_occ_by_supercell_Ising';</script>
     <link rel="icon" href="../../../_static/favicon-16x16.png"/>
@@ -559,34 +561,8 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Creating CASM project directory at Ising_occ
-Initializing CASM project &#39;Ising_occ&#39;
-Creating CASM project directory tree at: Ising_occ
-write: Ising_occ/.casm/prim.json
-write: Ising_occ/.casm/project_settings.json
-write: Ising_occ/symmetry/lattice_point_group.json
-write: Ising_occ/symmetry/factor_group.json
-write: Ising_occ/symmetry/crystal_point_group.json
-
-Lattice point group: 
-- size=16
-- international=4/mmm
-- schoenflies=D4h
-
-Factor group: 
-- size=32
-- international=P 4/m m m, P 4/m 2/m 2/m, P4/mmm
-- schoenflies=D4h^1
-- spacegroup=123
-- magnetic spacegroup uni_number=1000
-
-Crystal point group: 
-- size=32
-- international=4/mmm
-- schoenflies=D4h
-- magnetic spacegroup uni_number=1000
-
-DONE
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CASM project already exists at Ising_occ
+Using existing project
 
 Factor group operations:
 0: 1
@@ -677,138 +653,97 @@ Factor group operations:
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-- Begin: Enumerating occupations by supercell --
 
 Enumerate configurations for: SCEL1_1_1_1_0_0_0
-1 configurations (1 new, 0 excluded by filter)
-
+1 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL2_1_2_1_0_0_0
-1 configurations (1 new, 0 excluded by filter)
-
+1 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL2_2_1_1_0_0_1
-1 configurations (1 new, 0 excluded by filter)
-
+1 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL3_1_3_1_0_0_0
-1 configurations (1 new, 0 excluded by filter)
-
+1 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL3_3_1_1_0_0_1
-1 configurations (1 new, 0 excluded by filter)
-
+1 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL4_1_4_1_0_0_0
-2 configurations (2 new, 0 excluded by filter)
-
+2 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL4_4_1_1_0_0_1
-2 configurations (2 new, 0 excluded by filter)
-
+2 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL4_4_1_1_0_0_2
-2 configurations (2 new, 0 excluded by filter)
-
+2 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL4_2_2_1_0_0_0
-1 configurations (1 new, 0 excluded by filter)
-
+1 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL5_1_5_1_0_0_0
-3 configurations (3 new, 0 excluded by filter)
-
+3 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL5_5_1_1_0_0_4
-3 configurations (3 new, 0 excluded by filter)
-
+3 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL5_5_1_1_0_0_2
-2 configurations (2 new, 0 excluded by filter)
-
+2 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL6_1_6_1_0_0_0
-5 configurations (5 new, 0 excluded by filter)
-
+5 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL6_6_1_1_0_0_1
-5 configurations (5 new, 0 excluded by filter)
-
+5 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL6_3_2_1_0_0_1
-5 configurations (5 new, 0 excluded by filter)
-
+5 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL6_2_3_1_0_0_1
-5 configurations (5 new, 0 excluded by filter)
-
+5 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL6_2_3_1_0_0_0
-5 configurations (5 new, 0 excluded by filter)
-
+5 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL7_1_7_1_0_0_0
-8 configurations (8 new, 0 excluded by filter)
-
+8 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL7_7_1_1_0_0_6
-8 configurations (8 new, 0 excluded by filter)
-
+8 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL7_7_1_1_0_0_2
-8 configurations (8 new, 0 excluded by filter)
-
+8 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL8_1_8_1_0_0_0
-14 configurations (14 new, 0 excluded by filter)
-
+14 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL8_8_1_1_0_0_1
-14 configurations (14 new, 0 excluded by filter)
-
+14 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL8_8_1_1_0_0_2
-14 configurations (14 new, 0 excluded by filter)
-
+14 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL8_8_1_1_0_0_3
-10 configurations (10 new, 0 excluded by filter)
-
+10 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL8_2_4_1_0_0_1
-14 configurations (14 new, 0 excluded by filter)
-
+14 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL8_2_4_1_0_0_0
-13 configurations (13 new, 0 excluded by filter)
-
+13 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL8_4_2_1_0_0_2
-8 configurations (8 new, 0 excluded by filter)
-
+8 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL9_1_9_1_0_0_0
-21 configurations (21 new, 0 excluded by filter)
-
+21 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL9_9_1_1_0_0_8
-21 configurations (21 new, 0 excluded by filter)
-
+21 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL9_9_1_1_0_0_2
-21 configurations (21 new, 0 excluded by filter)
-
+21 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL9_9_1_1_0_0_6
-21 configurations (21 new, 0 excluded by filter)
-
+21 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL9_3_3_1_0_0_0
-10 configurations (10 new, 0 excluded by filter)
-
+10 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL10_1_10_1_0_0_0
-39 configurations (39 new, 0 excluded by filter)
-
+39 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL10_10_1_1_0_0_1
-39 configurations (39 new, 0 excluded by filter)
-
+39 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL10_10_1_1_0_0_2
-39 configurations (39 new, 0 excluded by filter)
-
+39 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL10_10_1_1_0_0_3
-22 configurations (22 new, 0 excluded by filter)
-
+22 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL10_10_1_1_0_0_6
-39 configurations (39 new, 0 excluded by filter)
-
+39 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL10_2_5_1_0_0_1
-39 configurations (39 new, 0 excluded by filter)
-
+39 configurations (0 new, 0 excluded by filter)
 Enumerate configurations for: SCEL10_2_5_1_0_0_0
-39 configurations (39 new, 0 excluded by filter)
-
+39 configurations (0 new, 0 excluded by filter)
   DONE
 
 -- Summary --
 
-  Initial number of configurations: 0
+  Initial number of configurations: 506
   Final number of configurations: 506
-
 Committing...
 
 EnumData:
 - id: main
 - supercell_set: 39 supercells
 - configuration_set: 506 configurations
-
-write: Ising_occ/enumerations/enum.main/scel_set.json
-write: Ising_occ/enumerations/enum.main/config_set.json
+overwrite: Ising_occ/enumerations/enum.main/scel_set.json
+overwrite: Ising_occ/enumerations/enum.main/config_set.json
 </pre></div>
 </div>
 </div>
@@ -871,7 +806,7 @@ SCEL5_5_1_1_0_0_2/1     [1 1 1 1 0]         [&#39;A&#39;, &#39;A&#39;, &#39;A&#3
 SCEL5_1_5_1_0_0_0/1     [1 1 0 1 0]         [&#39;A&#39;, &#39;A&#39;, &#39;A&#39;, &#39;A&#39;, &#39;A&#39;]           [ 1.  1. -1.  1. -1.]               
 SCEL5_1_5_1_0_0_0/0     [1 1 1 0 0]         [&#39;A&#39;, &#39;A&#39;, &#39;A&#39;, &#39;A&#39;, &#39;A&#39;]           [ 1.  1.  1. -1. -1.]               
 SCEL5_1_5_1_0_0_0/2     [1 1 1 1 0]         [&#39;A&#39;, &#39;A&#39;, &#39;A&#39;, &#39;A&#39;, &#39;A&#39;]           [ 1.  1.  1.  1. -1.]               
-SCEL6_6_1_1_0_0_1/1     [1 1 0 1 0 0]       [&#39;A&#39;, &#39;A&#39;, &#39;A&#39;, &#39;A&#39;, &#39;A&#39;, &#39;A&#39;]      [ 1.  1. -1.  1. -1. -1.]           
+SCEL6_6_1_1_0_0_1/1     [1 1 0 1 0 0]       [&#39;A&#39;, &#39;A&#39;, &#39;A&#39;, &#39;A&#39;, &#39;A&#39;, &#39;A&#39;]      [ 1.  1. -1.  1. -1. -1.]
 </pre></div>
 </div>
 </div>
@@ -976,7 +911,7 @@ SCEL6_6_1_1_0_0_1/1     [1 1 0 1 0 0]       [&#39;A&#39;, &#39;A&#39;, &#39;A&#3
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
     <br/>
   </p>
 </div>

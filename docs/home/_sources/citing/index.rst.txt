@@ -1,4 +1,5 @@
-.. include:: ../_shared/logo_and_spacing.rst
+..
+    .. include:: ../_shared/logo_and_spacing.rst
 
 .. _citing_casm:
 
@@ -39,7 +40,7 @@ If you use CASM to map lattices or crystal structures, please cite the following
 
     J.\  C. Thomas, A. R. Natarajan, and A. Van der Ven, "Comparing crystal structures with symmetry and geometry," *npj Computational Materials*, **7**, 164 (2021). DOI: `10.1038/s41524-021-00627-0 <https://doi.org/10.1038/s41524-021-00627-0>`_. :download:`[BibTeX] <../_static/bib/WOS_000705851600001.bib>`
 
-If you use CASM to generate and calculate symmetry-adapted order parameters (using either the :func:`~libcasm.configuration.dof_space_analysis` or :func:`~libcasm.configuration.config_space_analysis` methods), please cite the following reference:
+If you use CASM to generate and calculate symmetry-adapted order parameters (using any method), please cite the following reference:
 
 .. _orderparameter_ref:
 
@@ -66,36 +67,30 @@ If you use CASM to find independent composition axes or perform Monte Carlo calc
 
 The local cluster expansion for diffusion barriers was introduced by Van der Ven *et al.*:
 
-    A.\  Van der Ven, G. Ceder, M. Asta, and P. D. Tepesch, *Phys. Rev. B* **64**, 184307 (2001).
+    A.\  Van der Ven, G. Ceder, M. Asta, and P. D. Tepesch, *Phys. Rev. B* **64**, 184307 (2001). DOI: `10.1103/PhysRevB.64.184307 <https://doi.org/10.1103/PhysRevB.64.184307>`_.
 
 The anharmonic potential cluster expansion as implemented in CASM was developed by Thomas *et al.*:
 
-    J.\  C. Thomas, A. Van der Ven, "Finite-temperature properties of strongly anharmonic and mechanically unstable crystal phases from first principles", *Physical Review B*, **88**, 214111 (2013).
+    J.\  C. Thomas, A. Van der Ven, "Finite-temperature properties of strongly anharmonic and mechanically unstable crystal phases from first principles", *Physical Review B*, **88**, 214111 (2013). DOI: `10.1103/PhysRevB.88.214111 <https://doi.org/10.1103/PhysRevB.88.214111>`_.
 
 
 The fitting of the interaction coefficients of a cluster expansion to first-principles data relies on a minimization of the cross-validation (CV) score, an approach introduced to cluster expansions by van de Walle *et al.*:
 
-    A.\  van de Walle and G. Ceder, *J. Phase Equilib.* **23**, 348 (2002).
+    A.\  van de Walle and G. Ceder, *J. Phase Equilib.* **23**, 348 (2002). DOI: `10.1361/105497102770331596 <https://doi.org/10.1361/105497102770331596>`_.
 
 The approach of using a genetic algorithm to pick interaction coefficients that minimize the CV score was introduced by Hart *et al.*, while the depth first search approach is due to Puchala *et al.*:
 
-    G.\  L. W. Hart, V. Blum, M. J. Walorski, and A. Zunger, *Nat. Mater.* **4**, 391 (2005).
+    G.\  L. W. Hart, V. Blum, M. J. Walorski, and A. Zunger, *Nat. Mater.* **4**, 391 (2005). DOI: `10.1038/nmat1374 <https://doi.org/10.1038/nmat1374>`_.
 
-    B.\  Puchala, A. Van der Ven, "Thermodynamics of the Zr-O system from first-principles calculations", *Physical Review B*, **88**, 094108 (2013).
+    B.\  Puchala, A. Van der Ven, "Thermodynamics of the Zr-O system from first-principles calculations", *Physical Review B*, **88**, 094108 (2013). DOI: `10.1103/PhysRevB.88.094108 <https://doi.org/10.1103/PhysRevB.88.094108>`_.
 
 The use of compressive sensing methods to parameterize a cluster expansion was introduced by Nelson *et al.*:
 
-    L.\  J. Nelson, G. L. W. Hart, F. Zhou, and V. Ozoliņš, *Phys. Rev. B* **87**, 035125 (2013).
+    L.\  J. Nelson, G. L. W. Hart, F. Zhou, and V. Ozoliņš, *Phys. Rev. B* **87**, 035125 (2013). DOI: `10.1103/PhysRevB.87.035125 <https://doi.org/10.1103/PhysRevB.87.035125>`_.
 
 Convergence criteria for Monte Carlo sampling are due to van de Walle *et al.*:
 
-    A.\  van de Walle, M. Asta, *Modell. Simul. Mater. Sci. Eng.* **10**, 521 (2002).
+    A.\  van de Walle, M. Asta, *Modell. Simul. Mater. Sci. Eng.* **10**, 521 (2002). DOI: `10.1088/0965-0393/10/5/304 <https://doi.org/10.1088/0965-0393/10/5/304>`_.
 
 
-.. _citation_submission:
-
-Citation submission
-^^^^^^^^^^^^^^^^^^^
-
-If you use CASM for published work, please submit the publication information using our `citation submission form <https://docs.google.com/forms/d/e/1FAIpQLScWMUcKNeix1HrMMkwnYqEsyjKG5o2oK8H7S05B4S2NOOQ-vw/viewform?usp=header>`_ or send an email to :email:`casm-developers@lists.engr.ucsb.edu` so that we can include your citation on our website and demonstrate our impact to our funding agency.
 

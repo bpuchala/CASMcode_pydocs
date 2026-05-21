@@ -1,0 +1,6 @@
+print\_asymmetric\_units
+========================
+
+.. currentmodule:: casm.project
+
+.. autofunction:: print_asymmetric_units

@@ -1,6 +1,0 @@
-from\_dict
-==========
-
-.. currentmodule:: casm.project
-
-.. automethod:: FittingData.from_dict

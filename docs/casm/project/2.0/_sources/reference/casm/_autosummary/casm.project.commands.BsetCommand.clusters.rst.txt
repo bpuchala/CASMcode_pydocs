@@ -1,6 +1,0 @@
-clusters
-========
-
-.. currentmodule:: casm.project.commands
-
-.. automethod:: BsetCommand.clusters

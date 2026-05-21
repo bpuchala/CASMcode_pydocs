@@ -1,0 +1,36 @@
+SupercellRecord
+===============
+
+.. currentmodule:: libcasm.configuration
+
+.. autoclass:: SupercellRecord
+  :show-inheritance:
+
+  
+  
+  .. rubric:: Methods
+
+  .. autosummary::
+    :nosignatures:
+    :toctree:
+    :template: custom-function-template.rst
+  
+    ~SupercellRecord.copy
+  
+  
+
+  
+  
+  .. rubric:: Attributes
+
+  .. autosummary::
+    :nosignatures:
+    :toctree:
+    :template: custom-attr-template.rst
+    
+      ~SupercellRecord.canonical_supercell_name
+      ~SupercellRecord.is_canonical
+      ~SupercellRecord.supercell
+      ~SupercellRecord.supercell_name
+    
+    

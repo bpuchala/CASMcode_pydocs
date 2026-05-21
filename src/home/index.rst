@@ -8,7 +8,7 @@
     Reference <reference/index>
     About <about/index>
     Citing <citing/index>
-    Sample Publications <publications/index>
+    Publications <publications/index>
     Contributing <contributing/index>
 
 
@@ -30,8 +30,8 @@ CASM consists of several Python packages, some are pure Python packages and some
 
 To read more about CASM, or to cite it in a publication, please see the `Citing CASM <cite.html>`_ page.
 
-Sample publications using CASM
-------------------------------
+Publications using CASM
+-----------------------
 
 .. include:: /_static/publications/_featured_index.rst
 

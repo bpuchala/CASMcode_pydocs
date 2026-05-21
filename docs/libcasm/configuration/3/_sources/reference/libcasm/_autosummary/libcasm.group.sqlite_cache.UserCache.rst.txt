@@ -1,0 +1,27 @@
+UserCache
+=========
+
+.. currentmodule:: libcasm.group.sqlite_cache
+
+.. autoclass:: UserCache
+  :show-inheritance:
+
+  
+  
+  .. rubric:: Methods
+
+  .. autosummary::
+    :signatures: short
+    :toctree:
+    :template: custom-function-template.rst
+  
+    ~UserCache.clear_cache
+    ~UserCache.delete
+    ~UserCache.get
+    ~UserCache.store
+  
+  
+
+  
+  
+    

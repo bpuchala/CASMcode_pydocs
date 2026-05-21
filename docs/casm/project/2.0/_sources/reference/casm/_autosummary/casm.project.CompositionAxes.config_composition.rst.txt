@@ -1,6 +1,0 @@
-config\_composition
-===================
-
-.. currentmodule:: casm.project
-
-.. autoproperty:: CompositionAxes.config_composition

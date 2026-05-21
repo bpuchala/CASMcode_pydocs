@@ -1,6 +1,0 @@
-functions
-=========
-
-.. currentmodule:: casm.project.commands
-
-.. automethod:: BsetCommand.functions

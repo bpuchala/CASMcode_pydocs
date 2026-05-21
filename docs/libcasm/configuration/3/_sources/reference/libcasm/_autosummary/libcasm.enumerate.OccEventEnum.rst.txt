@@ -1,0 +1,41 @@
+OccEventEnum
+============
+
+.. currentmodule:: libcasm.enumerate
+
+.. autoclass:: OccEventEnum
+  :show-inheritance:
+
+  
+  
+  .. rubric:: Methods
+
+  .. autosummary::
+    :signatures: short
+    :toctree:
+    :template: custom-function-template.rst
+  
+    ~OccEventEnum.by_branch_and_orbit_index
+    ~OccEventEnum.by_cluster_list
+    ~OccEventEnum.by_cluster_specs
+    ~OccEventEnum.by_max_length
+    ~OccEventEnum.by_n_orbits
+  
+  
+
+  
+  
+  .. rubric:: Attributes
+
+  .. autosummary::
+    :signatures: short
+    :toctree:
+    :template: custom-attr-template.rst
+    
+      ~OccEventEnum.cluster_specs
+      ~OccEventEnum.enum_index
+      ~OccEventEnum.event_set
+      ~OccEventEnum.prim
+      ~OccEventEnum.system
+    
+    

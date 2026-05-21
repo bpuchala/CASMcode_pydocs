@@ -1,0 +1,40 @@
+OccEventSet
+===========
+
+.. currentmodule:: libcasm.enumerate
+
+.. autoclass:: OccEventSet
+  :show-inheritance:
+
+  
+  
+  .. rubric:: Methods
+
+  .. autosummary::
+    :signatures: short
+    :toctree:
+    :template: custom-function-template.rst
+  
+    ~OccEventSet.add
+    ~OccEventSet.add_event
+    ~OccEventSet.add_record
+    ~OccEventSet.clear
+    ~OccEventSet.discard
+    ~OccEventSet.discard_by_name
+    ~OccEventSet.discard_event
+    ~OccEventSet.empty
+    ~OccEventSet.from_dict
+    ~OccEventSet.get
+    ~OccEventSet.get_by_name
+    ~OccEventSet.get_event
+    ~OccEventSet.print
+    ~OccEventSet.remove
+    ~OccEventSet.remove_by_name
+    ~OccEventSet.remove_event
+    ~OccEventSet.to_dict
+  
+  
+
+  
+  
+    

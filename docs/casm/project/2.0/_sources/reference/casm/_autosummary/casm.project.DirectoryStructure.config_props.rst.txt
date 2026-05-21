@@ -1,6 +1,0 @@
-config\_props
-=============
-
-.. currentmodule:: casm.project
-
-.. automethod:: DirectoryStructure.config_props

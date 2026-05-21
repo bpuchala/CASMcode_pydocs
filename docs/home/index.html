@@ -7,6 +7,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Overview" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://prisms-center.github.io/CASMcode_pydocs/home/index.html" />
+<meta property="og:site_name" content="CASM" />
+<meta property="og:description" content="CASM logo CASM logo CASM (Clusters Approach to Statistical Mechanics) is an open source software suite designed to perform first-principles statistical mechanical studies of multi-component crystal..." />
+<meta property="og:image" content="https://prisms-center.github.io/CASMcode_pydocs/home/_static/og_image.png" />
+<meta property="og:image:alt" content="CASM" />
+<meta name="description" content="CASM logo CASM logo CASM (Clusters Approach to Statistical Mechanics) is an open source software suite designed to perform first-principles statistical mechanical studies of multi-component crystal..." />
 
     <title>Overview &#8212; CASM  documentation</title>
   
@@ -33,7 +41,10 @@
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=da4e430f" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=9efdb074" />
+    <link rel="stylesheet" type="text/css" href="_static/css/featured_random.css?v=632cc064" />
+    <link rel="stylesheet" type="text/css" href="_static/css/tom-select.bootstrap5.min.css?v=900ec6fa" />
+    <link rel="stylesheet" type="text/css" href="_static/css/publications_list.css?v=fe3e4b86" />
   
   <!-- So that users can add custom icons -->
   <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -47,8 +58,12 @@
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
+    <script src="_static/js/pkg_nav_labels.js?v=f5d72ee4"></script>
+    <script src="_static/js/featured_random.js?v=d8968cf8"></script>
+    <script src="_static/js/list.min.js?v=1c81fffb"></script>
+    <script src="_static/js/tom-select.complete.min.js?v=69668b3b"></script>
+    <script src="_static/js/publications_list.js?v=4502ef88"></script>
     <link rel="icon" href="_static/favicon-16x16.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -168,11 +183,28 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="contributing/index.html">
+  <a class="nav-link nav-internal" href="publications/index.html">
+    Publications
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="contributing/index.html">
     Contributing
   </a>
 </li>
 
+                </ul>
+            </li>
+            
   </ul>
 </nav></div>
       
@@ -277,6 +309,13 @@
 
 
 <li class="nav-item ">
+  <a class="nav-link nav-internal" href="publications/index.html">
+    Publications
+  </a>
+</li>
+
+
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="contributing/index.html">
     Contributing
   </a>
@@ -340,37 +379,570 @@
 </div>
 <section id="overview">
 <h1>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h1>
-<p>CASM (Clusters Approach to Statistical Mechanics) is an open source software suite designed to perform first-principles statistical mechanical studies of multi-component crystalline solids. CASM interfaces with first-principles electronic structure codes, automates the construction and parameterization of effective Hamiltonians and subsequently builds highly optimized (kinetic) Monte Carlo codes to predict finite-temperature thermodynamic and kinetic properties. CASM uses group theoretic techniques that take full advantage of crystal symmetry in order to rigorously construct effective Hamiltonians for almost arbitrary degrees of freedom in crystalline solids. This includes cluster expansions for configurational disorder in multi-component solids and lattice-dynamical effective Hamiltonians for vibrational degrees of freedom involved in structural phase transitions.</p>
+<p>CASM (Clusters Approach to Statistical Mechanics) is an open source software suite designed to perform first-principles statistical mechanical studies of multi-component crystalline solids. CASM uses group theoretic techniques that take full advantage of crystal symmetry in order to rigorously construct effective Hamiltonians for almost arbitrary degrees of freedom in crystalline solids. Examples include:</p>
+<ul class="simple">
+<li><p>cluster expansions for configurational disorder in multi-component solids,</p></li>
+<li><p>coupled Hamiltonians of configurational disorder and homogeneous strain,</p></li>
+<li><p>lattice-dynamical effective Hamiltonians for vibrational degrees of freedom involved in structural phase transitions.</p></li>
+</ul>
+<p>CASM consists of several Python packages, some are pure Python packages and some are interfaces to libraries written in C++. These provide tools to:</p>
+<ul class="simple">
+<li><p>automate the construction and parameterization of effective Hamiltonians,</p></li>
+<li><p>interface with first-principles electronic structure codes,</p></li>
+<li><p>build highly optimized (kinetic) Monte Carlo codes to predict finite-temperature thermodynamic and kinetic properties.</p></li>
+</ul>
 <p>To read more about CASM, or to cite it in a publication, please see the <a class="reference external" href="cite.html">Citing CASM</a> page.</p>
 </section>
-<section id="recent-publications-using-casm">
-<h1>Recent publications using CASM<a class="headerlink" href="#recent-publications-using-casm" title="Link to this heading">#</a></h1>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<section id="publications-using-casm">
+<h1>Publications using CASM<a class="headerlink" href="#publications-using-casm" title="Link to this heading">#</a></h1>
+<script id="featured-weights" type="application/json">
+
+{"Paetsch2026_1": 0.6931471805599453, "Bai2025_1": 0.0, "Bassey2025_1": 0.6931471805599453, "Behara2025_1": 1.3862943611198906, "Jeon2025_1": 2.1972245773362196, "Le2025_1": 0.6931471805599453, "Muller2025_1": 2.1972245773362196, "Ponte2025_1": 1.6094379124341003, "Tucker2025_1": 0.6931471805599453, "Xiao2025_1": 2.5649493574615367, "Behara2024_2": 2.5649493574615367, "Behara2024_3": 3.044522437723423, "Koike2024_1": 0.6931471805599453, "Muller2024_1": 2.3978952727983707, "Nguyen2024_1": 1.9459101490553132, "Saber2024_1": 2.1972245773362196, "Thomas2024_1": 2.3978952727983707, "Wen2024_1": 2.3978952727983707, "Kumar2023_1": 2.995732273553991, "Saber2023_1": 2.833213344056216, "Shi2022_1": 2.4849066497880004, "Silva2022_1": 3.2188758248682006, "Silva2022_2": 2.0794415416798357, "Kolli2021_1": 3.044522437723423, "Snarskis2021_1": 3.091042453358316, "thomas_2021_npjcm": 3.6635616461296463, "Kolli2020_1": 2.9444389791664403, "Levin2020_1": 2.3978952727983707, "Natarajan2020_1": 3.912023005428146, "Natarajan2020_2": 3.4339872044851463, "Pilania2020_1": 4.61512051684126, "Natarajan2019_1": 3.4339872044851463, "Pilania2019_1": 3.4965075614664802, "Solomon2019_1": 4.343805421853684, "Heinze2018_1": 2.1972245773362196, "Natarajan2018_1": 4.248495242049359, "DeWitt2017_1": 3.7376696182833684, "natarajan_2017_prb": 3.7612001156935624, "Natarajan2016_1": 4.844187086458591, "Titus2016_1": 4.454347296253507, "Chang2015_1": 4.143134726391533, "See2014_1": 5.017279836814924}
+
+</script><div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-paetsch2026-1 featured-card featured-paetsch2026-1 docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-The Crucial Role of Vacancy Concentration in Enabling Superatomic Diffusion in Lithium Intermetallics</div>
-<a class="reference external image-reference" href="https://doi.org/10.1021/acsenergylett.5c00266"><img alt="Description of the image" class="align-left" src="_images/image1.jpeg" style="width: 300px;" />
+First-Principles Thermodynamics of Hydrogen Absorption in Binary C15 Laves Phases</div>
+<a class="reference external image-reference" href="https://doi.org/10.1021/acs.chemmater.5c01925"><img alt="First-Principles Thermodynamics of Hydrogen Absorption in Binary C15 Laves Phases" class="align-left" src="_images/image1.webp" />
 </a>
-<p class="sd-card-text"><strong>Abstract</strong>: Anode-free solid-state Li batteries promise significant increases in energy densities compared to current commercial batteries that rely on liquid electrolytes. Major challenges persist in controlling morphological evolution during the plating and stripping of lithium metal at the anode current collector. Elemental additives that alloy with lithium have been found to modify the plating and stripping behavior of lithium. Many alloying elements form intermetallics with lithium and the mobility of Li through these intermetallics is believed to have an important effect on morphological evolution. This study shows that Li transport coefficients through intermetallics span a wide range in values, with the B32 LiAl intermetallic predicted to have a Li tracer diffusion coefficient as high as <span class="math notranslate nohighlight">\(10^{–6}\)</span> <span class="math notranslate nohighlight">\(\mathrm{cm}^{2}/\mathrm{s}\)</span> at room temperature, which is 8 orders of magnitude larger than that of isostructural B32 LiZn. This work demonstrates the crucial role of vacancy concentration in controlling the mobility of Li atoms through intermetallics. While the migration barriers for Li-vacancy exchanges in both LiAl and LiZn are remarkably low, the superatomic conductivity in LiAl is shown to arise from the unique electronic structure of the B32 LiAl compound, which favors high concentrations of vacancies.</p>
-<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Cluster expansion, Metropolis Monte Carlo simulations, Kinetic Monte Carlo simulations</p>
-</div>
-<div class="sd-card-footer docutils">
-<p class="sd-card-text">S. S. Behara and A. Van der Ven, <em>ACS Energy Lett.</em> 2025, <strong>10</strong>, 1772−1778.</p>
-<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1021/acsenergylett.5c00266">10.1021/acsenergylett.5c00266</a> <a class="reference download internal" download="" href="_downloads/b29def6cc9659e35861e926a240a523e/WOS_001448319400001.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
-</div>
-</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-The Crucial Role of Vacancy Concentration in Enabling Superatomic Diffusion in Lithium Intermetallics</div>
-<a class="reference external image-reference" href="https://doi.org/10.1021/acs.chemmater.4c01903"><img alt="Description of the image" class="align-left" src="_images/image11.jpeg" style="width: 300px;" />
-</a>
-<p class="sd-card-text"><strong>Abstract</strong>: A carbon-silver anode has recently been shown to suppress dendrite formation in all-solid-state lithium-ion batteries. The role that silver plays in enabling the reversible deposition and stripping of lithium remains unknown. Furthermore, very little is known about the thermodynamic and kinetic properties of Li<sub>x</sub>Ag<sub>1-x</sub> alloys. Here, we report on an in-depth first-principles study of phase stability and diffusion mechanisms in the Li-Ag alloy system. We identify two new intermetallic phases that are predicted to be stable in Li-rich Li<sub>x</sub>Ag<sub>1-x</sub> alloys with stoichiometries of Li<sub>3</sub>Ag and Li<sub>11</sub>Ag<sub>2</sub>. Our calculations show that the peculiar and highly anharmonic energy surface of pure Li along the Bain and Burgers paths persists upon the addition of Ag to BCC Li. This has important implications for room-temperature phase stability and mechanical properties. We have also performed a systematic study of diffusion mechanisms in the Li<sub>x</sub>Ag<sub>1-x</sub> alloy system as a function of alloy concentration x. Diffusion in alloys and intermetallics is mediated by vacancies. High vacancy formation energies are predicted in the Li<sub>x</sub>Ag<sub>1-x</sub> alloy, especially in Ag-rich FCC solid solutions. Complex diffusion mechanisms are identified in the B2 and <span class="math notranslate nohighlight">\(\gamma\)</span>-brass intermetallic phases that include two-atom hops and second-nearest neighbor hops. The migration barriers are found to decrease with increasing Li concentration, with predictions of exceptionally low migration barriers of 0.1 eV in the D0<sub>3</sub> Li<sub>3</sub>Ag phase.</p>
 <p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Cluster expansion, Metropolis Monte Carlo simulations</p>
 </div>
 <div class="sd-card-footer docutils">
-<p class="sd-card-text">J. Thomas, S. S. Behara, and A. Van der Ven, <em>Chem. Mater.</em> 2024, <strong>36</strong>, 8936−8948.</p>
-<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1021/acs.chemmater.4c01903">10.1021/acs.chemmater.4c01903</a> <a class="reference download internal" download="" href="_downloads/e81097a74ff79abea2957f350ebc1a09/WOS_001302827200001.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+<p class="sd-card-text">C. A. Paetsch and A. R. Natarajan, <em>Chemistry of Materials</em> 2026, <strong>38</strong>, 683–693.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1021/acs.chemmater.5c01925">10.1021/acs.chemmater.5c01925</a> <a class="reference download internal" download="" href="_downloads/303aff9048fd946606c68c51a6250297/Paetsch2026_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-bai2025-1 featured-card featured-bai2025-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Decoding complex compositions in topologically close-packed nanoplates of magnesium alloys: A high-throughput route to stable precipitates</div>
+<a class="reference external image-reference" href="https://doi.org/10.1016/j.jma.2025.09.004"><img alt="Decoding complex compositions in topologically close-packed nanoplates of magnesium alloys: A high-throughput route to stable precipitates" class="align-left" src="_images/image1.jpeg" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">J. Bai, X. Pang, and G. Qin, <em>Journal of Magnesium and Alloys</em> 2025, 101877.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1016/j.jma.2025.09.004">10.1016/j.jma.2025.09.004</a> <a class="reference download internal" download="" href="_downloads/23214a48363241a846d152c2a681af15/Bai2025_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-bassey2025-1 featured-card featured-bassey2025-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Structural complexity in a highly reversible “anion-redox” cathode</div>
+<a class="reference external image-reference" href="https://doi.org/10.1039/d5ta01450f"><img alt="Structural complexity in a highly reversible “anion-redox” cathode" class="align-left" src="_images/image1.gif" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">E. N. Bassey, E. A. Lawrence, O. Korjus, E. Suard, A. Van der Ven, and R. J. Clément, <em>Journal of Materials Chemistry A</em> 2025, <strong>13</strong>, 19390–19407.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1039/d5ta01450f">10.1039/d5ta01450f</a> <a class="reference download internal" download="" href="_downloads/0973df56a36cbacba279c02175cc6ca2/Bassey2025_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-behara2025-1 featured-card featured-behara2025-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+The Crucial Role of Vacancy Concentration in Enabling Superatomic Diffusion in Lithium Intermetallics</div>
+<a class="reference external image-reference" href="https://doi.org/10.1021/acsenergylett.5c00266"><img alt="The Crucial Role of Vacancy Concentration in Enabling Superatomic Diffusion in Lithium Intermetallics" class="align-left" src="_images/image11.webp" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Cluster expansion, Metropolis Monte Carlo simulations, Kinetic Monte Carlo simulations, Phase diagram construction</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">S. S. Behara and A. Van der Ven, <em>ACS Energy Letters</em> 2025, <strong>10</strong>, 1772–1778.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1021/acsenergylett.5c00266">10.1021/acsenergylett.5c00266</a> <a class="reference download internal" download="" href="_downloads/cd0cc5ef4c633189fb70118bdac3b3e0/Behara2025_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-jeon2025-1 featured-card featured-jeon2025-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Lithium diffusion-controlled Li-Al alloy negative electrode for all-solid-state battery</div>
+<a class="reference external image-reference" href="https://doi.org/10.1038/s41467-025-64386-y"><img alt="Lithium diffusion-controlled Li-Al alloy negative electrode for all-solid-state battery" class="align-left" src="_images/image12.webp" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Cluster expansion, Metropolis Monte Carlo simulations, Kinetic Monte Carlo simulations</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">Y. Jeon, D. J. Lee, H. Zheng, S. S. Behara, J. Lee, J. Wu, F. Li, W. Tang, L. Zhang, Y. Chen, D. Xu, J. Kim, M. Song, A. Van der Ven, K. He, and Z. Chen, <em>Nature Communications</em> 2025, <strong>16</strong>, 9629–9629.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1038/s41467-025-64386-y">10.1038/s41467-025-64386-y</a> <a class="reference download internal" download="" href="_downloads/9a538bfbec9b37458d7d2fdb6e6fe28a/Jeon2025_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-le2025-1 featured-card featured-le2025-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Theoretical calculations to identify and design transition metal-based additives for hydrogen storage materials</div>
+<a class="reference external image-reference" href="https://doi.org/10.1016/j.cej.2025.166929"><img alt="Theoretical calculations to identify and design transition metal-based additives for hydrogen storage materials" class="align-left" src="_images/image11.jpeg" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">T. T. Le, J. Cao, S. Korneychuk, W. Chang, M. W. Rackel, D. Kramer, J. Markmann, F. Karimi, A. Pundt, T. Klassen, and C. Pistidda, <em>Chemical Engineering Journal</em> 2025, <strong>521</strong>, 166929.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1016/j.cej.2025.166929">10.1016/j.cej.2025.166929</a> <a class="reference download internal" download="" href="_downloads/0700239e2476ef2cc7106d8bf20180fa/Le2025_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-muller2025-1 featured-card featured-muller2025-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Constructing multicomponent cluster expansions with machine-learning and chemical embedding</div>
+<a class="reference external image-reference" href="https://doi.org/10.1038/s41524-025-01543-3"><img alt="Constructing multicomponent cluster expansions with machine-learning and chemical embedding" class="align-left" src="_images/image13.webp" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">Y. L. Müller and A. R. Natarajan, <em>npj Computational Materials</em> 2025, <strong>11</strong>, 60–60.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1038/s41524-025-01543-3">10.1038/s41524-025-01543-3</a> <a class="reference download internal" download="" href="_downloads/e3e4bf24a337b5dea87240ae94582d5a/Muller2025_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-ponte2025-1 featured-card featured-ponte2025-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+First-Principles Statistical Mechanics Study of Magnetic Fluctuations and Order–Disorder in the Spinel LiNi<sub>0.5</sub>Mn<sub>1.5</sub>O<sub>4</sub> Cathode</div>
+<a class="reference external image-reference" href="https://doi.org/10.1021/acs.chemmater.4c02772"><img alt="First-Principles Statistical Mechanics Study of Magnetic Fluctuations and Order–Disorder in the Spinel LiNi0.5Mn1.5O4 Cathode" class="align-left" src="_images/image14.webp" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Cluster expansion, Metropolis Monte Carlo simulations, Phase diagram construction</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">G. E. García Ponte, S. S. Behara, E. N. Bassey, R. J. Clément, and A. Van der Ven, <em>Chemistry of Materials</em> 2025, <strong>37</strong>, 1835–1846.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1021/acs.chemmater.4c02772">10.1021/acs.chemmater.4c02772</a> <a class="reference download internal" download="" href="_downloads/03097ecaf902c7beb9f4b365c636ba41/Ponte2025_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-tucker2025-1 featured-card featured-tucker2025-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Theoretical and experimental quantification of Suzuki segregation enthalpy and strengthening mechanisms in a binary alloy</div>
+<a class="reference external image-reference" href="https://doi.org/10.1038/s43246-025-00864-6"><img alt="Theoretical and experimental quantification of Suzuki segregation enthalpy and strengthening mechanisms in a binary alloy" class="align-left" src="_images/image15.webp" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Cluster expansion, Metropolis Monte Carlo simulations</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">V. Tucker, D. Wen, V. Cooley, J. Park, and M. S. Titus, <em>Communications Materials</em> 2025, <strong>6</strong>.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1038/s43246-025-00864-6">10.1038/s43246-025-00864-6</a> <a class="reference download internal" download="" href="_downloads/7c0b19b46c0ce3329f91daf65280829d/Tucker2025_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-xiao2025-1 featured-card featured-xiao2025-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Atomic-scale understanding of oxide growth and dissolution kinetics of Ni-Cr alloys</div>
+<a class="reference external image-reference" href="https://doi.org/10.1038/s41467-024-54627-x"><img alt="Atomic-scale understanding of oxide growth and dissolution kinetics of Ni-Cr alloys" class="align-left" src="_images/image16.webp" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Cluster expansion, Kinetic Monte Carlo simulations</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">P. Xiao, C. A. Orme, S. R. Qiu, T. A. Pham, S. Cho, M. Bagge-Hansen, and B. C. Wood, <em>Nature Communications</em> 2025, <strong>16</strong>, 341–341.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1038/s41467-024-54627-x">10.1038/s41467-024-54627-x</a> <a class="reference download internal" download="" href="_downloads/b3c411315b2cd4ce64f6c33bf7e48f4e/Xiao2025_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-behara2024-2 featured-card featured-behara2024-2 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Role of Short-Range Order on Diffusion Coefficients in the Li–Mg Alloy</div>
+<a class="reference external image-reference" href="https://doi.org/10.1021/acs.chemmater.4c02334"><img alt="Role of Short-Range Order on Diffusion Coefficients in the Li–Mg Alloy" class="align-left" src="_images/image12.jpeg" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Cluster expansion, Metropolis Monte Carlo simulations, Kinetic Monte Carlo simulations, Phase diagram construction</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">S. S. Behara and A. Van der Ven, <em>Chemistry of Materials</em> 2024, <strong>36</strong>, 11236–11245.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1021/acs.chemmater.4c02334">10.1021/acs.chemmater.4c02334</a> <a class="reference download internal" download="" href="_downloads/e92c3ab5b4476e42d5acd8e043fbb52d/Behara2024_2.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-behara2024-3 featured-card featured-behara2024-3 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Fundamental Thermodynamic, Kinetic, and Mechanical Properties of Lithium and Its Alloys</div>
+<a class="reference external image-reference" href="https://doi.org/10.1021/acs.chemmater.4c01279"><img alt="Fundamental Thermodynamic, Kinetic, and Mechanical Properties of Lithium and Its Alloys" class="align-left" src="_images/image17.webp" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Structure mapping, Cluster expansion, Metropolis Monte Carlo simulations, Kinetic Monte Carlo simulations</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">S. S. Behara, J. Thomas, and A. Van der Ven, <em>Chemistry of Materials</em> 2024, <strong>36</strong>, 7370–7387.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1021/acs.chemmater.4c01279">10.1021/acs.chemmater.4c01279</a> <a class="reference download internal" download="" href="_downloads/13dea4b142e726d3948fd22001515c05/Behara2024_3.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-koike2024-1 featured-card featured-koike2024-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Pressure-Induced YbFe2O4-Type to Spinel Structural Change of InGaMgO4</div>
+<a class="reference external image-reference" href="https://doi.org/10.3390/solids5030028"><img alt="Pressure-Induced YbFe2O4-Type to Spinel Structural Change of InGaMgO4" class="align-left" src="_images/image1.png" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Cluster expansion, Metropolis Monte Carlo simulations</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">T. Koike, H. Das, K. Oka, Y. Kusano, F. Cubillas, F. B. Bojorqez, V. E. Alvarez-Montano, S. Ito, K. Shigematsu, H. Togano, I. Yamada, H. Ishibashi, Y. Kubota, S. Mori, N. Kimizuka, and M. Azuma, <em>Solids</em> 2024, <strong>5</strong>, 422–433.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.3390/solids5030028">10.3390/solids5030028</a> <a class="reference download internal" download="" href="_downloads/f0b0202b79414ba71e0344786bf5901b/Koike2024_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-muller2024-1 featured-card featured-muller2024-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+First-principles thermodynamics of precipitation in aluminum-containing refractory alloys</div>
+<a class="reference external image-reference" href="https://doi.org/10.1016/j.actamat.2024.119995"><img alt="First-principles thermodynamics of precipitation in aluminum-containing refractory alloys" class="align-left" src="_images/image13.jpeg" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Cluster expansion, Metropolis Monte Carlo simulations, Phase diagram construction</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">Y. L. Müller and A. R. Natarajan, <em>Acta Materialia</em> 2024, <strong>274</strong>, 119995.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1016/j.actamat.2024.119995">10.1016/j.actamat.2024.119995</a> <a class="reference download internal" download="" href="_downloads/8ace48db5f6991dbae1efd48aa35c611/Muller2024_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-nguyen2024-1 featured-card featured-nguyen2024-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Operando electron spin probes for the study of battery processes</div>
+<a class="reference external image-reference" href="https://doi.org/10.1016/j.jmr.2024.107772"><img alt="Operando electron spin probes for the study of battery processes" class="align-left" src="_images/image14.jpeg" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">H. Nguyen, E. N. Bassey, E. E. Foley, D. A. Kitchaev, R. Giovine, and R. J. Clément, <em>Journal of Magnetic Resonance</em> 2024, <strong>368</strong>, 107772.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1016/j.jmr.2024.107772">10.1016/j.jmr.2024.107772</a> <a class="reference download internal" download="" href="_downloads/c8c0892803d10e11757d5012dc4bf45c/Nguyen2024_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-saber2024-1 featured-card featured-saber2024-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Redox Mechanisms upon the Lithiation of Wadsley–Roth Phases</div>
+<a class="reference external image-reference" href="https://doi.org/10.1021/acs.inorgchem.4c00603"><img alt="Redox Mechanisms upon the Lithiation of Wadsley–Roth Phases" class="align-left" src="_images/image18.webp" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">M. Saber and A. Van der Ven, <em>Inorganic Chemistry</em> 2024, <strong>63</strong>, 11041–11052.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1021/acs.inorgchem.4c00603">10.1021/acs.inorgchem.4c00603</a> <a class="reference download internal" download="" href="_downloads/b301b6996921dac272db10f4ff525ff3/Saber2024_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-thomas2024-1 featured-card featured-thomas2024-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Thermodynamic and Kinetic Properties of the Lithium–Silver System</div>
+<a class="reference external image-reference" href="https://doi.org/10.1021/acs.chemmater.4c01903"><img alt="Thermodynamic and Kinetic Properties of the Lithium–Silver System" class="align-left" src="_images/image11.gif" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Cluster expansion, Metropolis Monte Carlo simulations, Kinetic Monte Carlo simulations, Phase diagram construction</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">J. Thomas, S. S. Behara, and A. Van der Ven, <em>Chemistry of Materials</em> 2024, <strong>36</strong>, 8936–8948.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1021/acs.chemmater.4c01903">10.1021/acs.chemmater.4c01903</a> <a class="reference download internal" download="" href="_downloads/62f2c274fa3f405e718c1cb01dede21c/Thomas2024_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-wen2024-1 featured-card featured-wen2024-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Bayesian optimization acquisition functions for accelerated search of cluster expansion convex hull of multi-component alloys</div>
+<a class="reference external image-reference" href="https://doi.org/10.1038/s41524-024-01391-7"><img alt="Bayesian optimization acquisition functions for accelerated search of cluster expansion convex hull of multi-component alloys" class="align-left" src="_images/image19.webp" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Cluster expansion, Metropolis Monte Carlo simulations</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">D. Wen, V. Tucker, and M. S. Titus, <em>npj Computational Materials</em> 2024, <strong>10</strong>.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1038/s41524-024-01391-7">10.1038/s41524-024-01391-7</a> <a class="reference download internal" download="" href="_downloads/d3ca40f971eb3e3d809cbf71db72bd60/Wen2024_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-kumar2023-1 featured-card featured-kumar2023-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Efficient predictions of formation energies and convex hulls from density functional tight binding calculations</div>
+<a class="reference external image-reference" href="https://doi.org/10.1016/j.jmst.2022.10.002"><img alt="Efficient predictions of formation energies and convex hulls from density functional tight binding calculations" class="align-left" src="_images/image15.jpeg" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">A. Kumar, Z. A. Ali, and B. M. Wong, <em>Journal of Materials Science &amp; Technology</em> 2023, <strong>141</strong>, 236–244.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1016/j.jmst.2022.10.002">10.1016/j.jmst.2022.10.002</a> <a class="reference download internal" download="" href="_downloads/20119dc1dfc40b56680cbe0adc4ea38c/Kumar2023_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-saber2023-1 featured-card featured-saber2023-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Redox Mechanisms, Structural Changes, and Electrochemistry of the Wadsley–Roth Li<sub>x</sub>TiNb<sub>2</sub>O<sub>7</sub> Electrode Material</div>
+<a class="reference external image-reference" href="https://doi.org/10.1021/acs.chemmater.3c02003"><img alt="Redox Mechanisms, Structural Changes, and Electrochemistry of the Wadsley–Roth LixTiNb2O7 Electrode Material" class="align-left" src="_images/image12.gif" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Cluster expansion, Metropolis Monte Carlo simulations</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">M. Saber, S. S. Behara, and A. Van der Ven, <em>Chemistry of Materials</em> 2023, <strong>35</strong>, 9657–9668.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1021/acs.chemmater.3c02003">10.1021/acs.chemmater.3c02003</a> <a class="reference download internal" download="" href="_downloads/75d90a3ce57f150f9f87831426727588/Saber2023_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-shi2022-1 featured-card featured-shi2022-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Partitioning of Ca to metastable precipitates in a Mg-rare earth alloy</div>
+<a class="reference external image-reference" href="https://doi.org/10.1080/21663831.2022.2138724"><img alt="Partitioning of Ca to metastable precipitates in a Mg-rare earth alloy" class="align-left" src="_images/image16.jpeg" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Phase diagram construction</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">Q. Shi, A. R. Natarajan, A. Van der Ven, and J. Allison, <em>Materials Research Letters</em> 2022, <strong>11</strong>, 222–230.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1080/21663831.2022.2138724">10.1080/21663831.2022.2138724</a> <a class="reference download internal" download="" href="_downloads/4e9530fee20bf8d2c07cf5f99e3ed2b0/Shi2022_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-silva2022-1 featured-card featured-silva2022-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Design Guidelines for Two-Dimensional Transition Metal Dichalcogenide Alloys</div>
+<a class="reference external image-reference" href="https://doi.org/10.1021/acs.chemmater.2c01390"><img alt="Design Guidelines for Two-Dimensional Transition Metal Dichalcogenide Alloys" class="align-left" src="_images/image17.jpeg" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Cluster expansion, Metropolis Monte Carlo simulations, Phase diagram construction</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">A. Silva, J. Cao, T. Polcar, and D. Kramer, <em>Chemistry of Materials</em> 2022, <strong>34</strong>, 10279–10290.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1021/acs.chemmater.2c01390">10.1021/acs.chemmater.2c01390</a> <a class="reference download internal" download="" href="_downloads/b439a975fe9076addeb8258eefb12ff2/Silva2022_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-silva2022-2 featured-card featured-silva2022-2 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Pettifor maps of complex ternary two-dimensional transition metal sulfides</div>
+<a class="reference external image-reference" href="https://doi.org/10.1038/s41524-022-00868-7"><img alt="Pettifor maps of complex ternary two-dimensional transition metal sulfides" class="align-left" src="_images/image110.webp" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Cluster expansion, Phase diagram construction</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">A. Silva, J. Cao, T. Polcar, and D. Kramer, <em>npj Computational Materials</em> 2022, <strong>8</strong>.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1038/s41524-022-00868-7">10.1038/s41524-022-00868-7</a> <a class="reference download internal" download="" href="_downloads/122449f20ac4f25b7f08e3961b038568/Silva2022_2.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-kolli2021-1 featured-card featured-kolli2021-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Six new transformation pathways connecting simple crystal structures and common intermetallic crystal structures</div>
+<a class="reference external image-reference" href="https://doi.org/10.1016/j.actamat.2021.117429"><img alt="Six new transformation pathways connecting simple crystal structures and common intermetallic crystal structures" class="align-left" src="_images/image18.jpeg" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Structure mapping</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">S. K. Kolli, A. R. Natarajan, and A. Van der Ven, <em>Acta Materialia</em> 2021, <strong>221</strong>, 117429.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1016/j.actamat.2021.117429">10.1016/j.actamat.2021.117429</a> <a class="reference download internal" download="" href="_downloads/73dd6e6968647c1e7b385394a14a554d/Kolli2021_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-snarskis2021-1 featured-card featured-snarskis2021-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Peculiarities of Phase Formation in Mn-Based Na SuperIonic Conductor (NaSICon) Systems: The Case of Na<sub>1+2x</sub>Mn<sub>x</sub>Ti<sub>2–x</sub>(PO<sub>4</sub>)<sub>3</sub> (0.0 ≤ <em>x</em> ≤ 1.5)</div>
+<a class="reference external image-reference" href="https://doi.org/10.1021/acs.chemmater.1c02775"><img alt="Peculiarities of Phase Formation in Mn-Based Na SuperIonic Conductor (NaSICon) Systems: The Case of Na1+2xMnxTi2–x(PO4)3 (0.0 ≤ x ≤ 1.5)" class="align-left" src="_images/image19.jpeg" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Cluster expansion, Metropolis Monte Carlo simulations, Phase diagram construction</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">G. Snarskis, J. Pilipavičius, D. Gryaznov, L. Mikoliu̅naitė, and L. Vilčiauskas, <em>Chemistry of Materials</em> 2021, <strong>33</strong>, 8394–8403.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1021/acs.chemmater.1c02775">10.1021/acs.chemmater.1c02775</a> <a class="reference download internal" download="" href="_downloads/eb99c4a26a40a28c7fc1ef79d6ee6e8c/Snarskis2021_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-thomas-2021-npjcm featured-card featured-thomas-2021-npjcm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Comparing crystal structures with symmetry and geometry</div>
+<a class="reference external image-reference" href="https://doi.org/10.1038/s41524-021-00627-0"><img alt="Comparing crystal structures with symmetry and geometry" class="align-left" src="_images/image111.webp" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure mapping</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">J. C. Thomas, A. R. Natarajan, and A. Van der Ven, <em>npj Computational Materials</em> 2021, <strong>7</strong>.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1038/s41524-021-00627-0">10.1038/s41524-021-00627-0</a> <a class="reference download internal" download="" href="_downloads/99ebb9bdfd47541a965d1c4fdfaf0500/thomas_2021_npjcm.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-kolli2020-1 featured-card featured-kolli2020-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Discovering hierarchies among intermetallic crystal structures</div>
+<a class="reference external image-reference" href="https://doi.org/10.1103/physrevmaterials.4.113604"><img alt="Discovering hierarchies among intermetallic crystal structures" class="align-left" src="_images/image11.png" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Structure mapping</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">S. K. Kolli, A. R. Natarajan, J. C. Thomas, T. M. Pollock, and A. Van der Ven, <em>Physical Review Materials</em> 2020, <strong>4</strong>.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1103/physrevmaterials.4.113604">10.1103/PhysRevMaterials.4.113604</a> <a class="reference download internal" download="" href="_downloads/a8042d36e4a9d17415c5636201d9ed68/Kolli2020_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-levin2020-1 featured-card featured-levin2020-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Structural coupling and magnetic tuning in Mn2−<em>x</em>Co<em>x</em>P magnetocalorics for thermomagnetic power generation</div>
+<a class="reference external image-reference" href="https://doi.org/10.1063/1.5142000"><img alt="Structural coupling and magnetic tuning in Mn2−xCoxP magnetocalorics for thermomagnetic power generation" class="align-left" src="_images/image110.jpeg" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">E. E. Levin, J. D. Bocarsly, J. H. Grebenkemper, R. Issa, S. D. Wilson, T. M. Pollock, and R. Seshadri, <em>APL Materials</em> 2020, <strong>8</strong>.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1063/1.5142000">10.1063/1.5142000</a> <a class="reference download internal" download="" href="_downloads/24d88d9f4c5b617327e3e04515d654a3/Levin2020_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-natarajan2020-1 featured-card featured-natarajan2020-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Crystallography, thermodynamics and phase transitions in refractory binary alloys</div>
+<a class="reference external image-reference" href="https://doi.org/10.1016/j.actamat.2020.08.034"><img alt="Crystallography, thermodynamics and phase transitions in refractory binary alloys" class="align-left" src="_images/image111.jpeg" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Cluster expansion, Metropolis Monte Carlo simulations, Phase diagram construction</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">A. R. Natarajan, P. Dolin, and A. Van der Ven, <em>Acta Materialia</em> 2020, <strong>200</strong>, 171–186.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1016/j.actamat.2020.08.034">10.1016/j.actamat.2020.08.034</a> <a class="reference download internal" download="" href="_downloads/1e945d2bba75d685a47f60bd9d934d8f/Natarajan2020_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-natarajan2020-2 featured-card featured-natarajan2020-2 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Linking electronic structure calculations to generalized stacking fault energies in multicomponent alloys</div>
+<a class="reference external image-reference" href="https://doi.org/10.1038/s41524-020-0348-z"><img alt="Linking electronic structure calculations to generalized stacking fault energies in multicomponent alloys" class="align-left" src="_images/image112.webp" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Cluster expansion, Metropolis Monte Carlo simulations</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">A. R. Natarajan and A. Van der Ven, <em>npj Computational Materials</em> 2020, <strong>6</strong>.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1038/s41524-020-0348-z">10.1038/s41524-020-0348-z</a> <a class="reference download internal" download="" href="_downloads/82e127488e076d4a2b28bf966998c3a9/Natarajan2020_2.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-pilania2020-1 featured-card featured-pilania2020-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Prediction of structure and cation ordering in an ordered normal-inverse double spinel</div>
+<a class="reference external image-reference" href="https://doi.org/10.1038/s43246-020-00082-2"><img alt="Prediction of structure and cation ordering in an ordered normal-inverse double spinel" class="align-left" src="_images/image113.webp" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Cluster expansion, Metropolis Monte Carlo simulations, Phase diagram construction</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">G. Pilania, V. Kocevski, J. A. Valdez, C. R. Kreller, and B. P. Uberuaga, <em>Communications Materials</em> 2020, <strong>1</strong>.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1038/s43246-020-00082-2">10.1038/s43246-020-00082-2</a> <a class="reference download internal" download="" href="_downloads/494813db74baeaa6e19f873cd2596e56/Pilania2020_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-natarajan2019-1 featured-card featured-natarajan2019-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Toward an Understanding of Deformation Mechanisms in Metallic Lithium and Sodium from First-Principles</div>
+<a class="reference external image-reference" href="https://doi.org/10.1021/acs.chemmater.9b03422"><img alt="Toward an Understanding of Deformation Mechanisms in Metallic Lithium and Sodium from First-Principles" class="align-left" src="_images/image112.jpeg" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">A. Raju Natarajan and A. Van der Ven, <em>Chemistry of Materials</em> 2019, <strong>31</strong>, 8222–8229.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1021/acs.chemmater.9b03422">10.1021/acs.chemmater.9b03422</a> <a class="reference download internal" download="" href="_downloads/3844d768d0968d7760ac26e62df530a5/Natarajan2019_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-pilania2019-1 featured-card featured-pilania2019-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Distortion-stabilized ordered structures in A2BB’O7 mixed pyrochlores</div>
+<a class="reference external image-reference" href="https://doi.org/10.1038/s41524-018-0144-1"><img alt="Distortion-stabilized ordered structures in A2BB’O7 mixed pyrochlores" class="align-left" src="_images/image114.webp" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Cluster expansion, Metropolis Monte Carlo simulations, Phase diagram construction</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">G. Pilania, B. Puchala, and B. P. Uberuaga, <em>npj Computational Materials</em> 2019, <strong>5</strong>.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1038/s41524-018-0144-1">10.1038/s41524-018-0144-1</a> <a class="reference download internal" download="" href="_downloads/aa8b6db7e610a16728e5761b03298674/Pilania2019_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-solomon2019-1 featured-card featured-solomon2019-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Stability and strain-driven evolution of β′ precipitate in Mg-Y alloys</div>
+<a class="reference external image-reference" href="https://doi.org/10.1016/j.actamat.2018.12.026"><img alt="Stability and strain-driven evolution of β′ precipitate in Mg-Y alloys" class="align-left" src="_images/image113.jpeg" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">E. L. S. Solomon, A. R. Natarajan, A. M. Roy, V. Sundararaghavan, A. Van der Ven, and E. A. Marquis, <em>Acta Materialia</em> 2019, <strong>166</strong>, 148–157.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1016/j.actamat.2018.12.026">10.1016/j.actamat.2018.12.026</a> <a class="reference download internal" download="" href="_downloads/90754176a681ef1ce77987bdac3eae22/Solomon2019_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-heinze2018-1 featured-card featured-heinze2018-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Crystallography and substitution patterns in the ZrO<sub>2</sub>−YTaO<sub>4</sub> system</div>
+<a class="reference external image-reference" href="https://doi.org/10.1103/physrevmaterials.2.073607"><img alt="Crystallography and substitution patterns in the ZrO2−YTaO4 system" class="align-left" src="_images/image12.png" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">S. G. Heinze, A. R. Natarajan, C. G. Levi, and A. Van der Ven, <em>Physical Review Materials</em> 2018, <strong>2</strong>.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1103/physrevmaterials.2.073607">10.1103/PhysRevMaterials.2.073607</a> <a class="reference download internal" download="" href="_downloads/be3c7e976205062d4ee3d45fc7b210e4/Heinze2018_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-natarajan2018-1 featured-card featured-natarajan2018-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Machine-learning the configurational energy of multicomponent crystalline solids</div>
+<a class="reference external image-reference" href="https://doi.org/10.1038/s41524-018-0110-y"><img alt="Machine-learning the configurational energy of multicomponent crystalline solids" class="align-left" src="_images/image115.webp" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Cluster expansion, Phase diagram construction</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">A. R. Natarajan and A. Van der Ven, <em>npj Computational Materials</em> 2018, <strong>4</strong>.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1038/s41524-018-0110-y">10.1038/s41524-018-0110-y</a> <a class="reference download internal" download="" href="_downloads/9a09a39b0b4c5383173eb1667d355a05/Natarajan2018_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-dewitt2017-1 featured-card featured-dewitt2017-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Misfit-driven β′′′ precipitate composition and morphology in Mg-Nd alloys</div>
+<a class="reference external image-reference" href="https://doi.org/10.1016/j.actamat.2017.06.053"><img alt="Misfit-driven β′′′ precipitate composition and morphology in Mg-Nd alloys" class="align-left" src="_images/image114.jpeg" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Cluster expansion, Metropolis Monte Carlo simulations, Phase diagram construction</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">S. DeWitt, E. L. S. Solomon, A. R. Natarajan, V. Araullo-Peters, S. Rudraraju, L. K. Aagesen, B. Puchala, E. A. Marquis, A. van der Ven, K. Thornton, and J. E. Allison, <em>Acta Materialia</em> 2017, <strong>136</strong>, 378–389.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1016/j.actamat.2017.06.053">10.1016/j.actamat.2017.06.053</a> <a class="reference download internal" download="" href="_downloads/1fe2e5ff003bd01bf60da36bc82c7ec6/DeWitt2017_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-natarajan-2017-prb featured-card featured-natarajan-2017-prb docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Symmetry-adapted order parameters and free energies for solids undergoing order-disorder phase transitions</div>
+<a class="reference external image-reference" href="https://doi.org/10.1103/physrevb.96.134204"><img alt="Symmetry-adapted order parameters and free energies for solids undergoing order-disorder phase transitions" class="align-left" src="_images/image13.png" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Cluster expansion, Metropolis Monte Carlo simulations, Phase diagram construction</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">A. R. Natarajan, J. C. Thomas, B. Puchala, and A. Van der Ven, <em>Physical Review B</em> 2017, <strong>96</strong>.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1103/physrevb.96.134204">10.1103/PhysRevB.96.134204</a> <a class="reference download internal" download="" href="_downloads/124622a6b651660898d20e6da076fbf9/natarajan_2017_prb.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-natarajan2016-1 featured-card featured-natarajan2016-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+On the early stages of precipitation in dilute Mg–Nd alloys</div>
+<a class="reference external image-reference" href="https://doi.org/10.1016/j.actamat.2016.01.055"><img alt="On the early stages of precipitation in dilute Mg–Nd alloys" class="align-left" src="_images/image115.jpeg" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Cluster expansion, Metropolis Monte Carlo simulations, Phase diagram construction</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">A. R. Natarajan, E. L. S. Solomon, B. Puchala, E. A. Marquis, and A. Van der Ven, <em>Acta Materialia</em> 2016, <strong>108</strong>, 367–379.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1016/j.actamat.2016.01.055">10.1016/j.actamat.2016.01.055</a> <a class="reference download internal" download="" href="_downloads/c1e56ba870cd694ab53488dfeec68aa8/Natarajan2016_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-titus2016-1 featured-card featured-titus2016-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Solute segregation and deviation from bulk thermodynamics at nanoscale crystalline defects</div>
+<a class="reference external image-reference" href="https://doi.org/10.1126/sciadv.1601796"><img alt="Solute segregation and deviation from bulk thermodynamics at nanoscale crystalline defects" class="align-left" src="_images/image116.jpeg" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Cluster expansion, Metropolis Monte Carlo simulations, Phase diagram construction</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">M. S. Titus, R. K. Rhein, P. B. Wells, P. C. Dodge, G. B. Viswanathan, M. J. Mills, A. Van der Ven, and T. M. Pollock, <em>Science Advances</em> 2016, <strong>2</strong>, e1601796-e1601796.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1126/sciadv.1601796">10.1126/sciadv.1601796</a> <a class="reference download internal" download="" href="_downloads/d230845f7b2efb1b4a42d665c16f9dbd/Titus2016_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-chang2015-1 featured-card featured-chang2015-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Elucidating the origins of phase transformation hysteresis during electrochemical cycling of Li–Sb electrodes</div>
+<a class="reference external image-reference" href="https://doi.org/10.1039/c5ta06183k"><img alt="Elucidating the origins of phase transformation hysteresis during electrochemical cycling of Li–Sb electrodes" class="align-left" src="_images/image13.gif" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration, Cluster expansion, Metropolis Monte Carlo simulations, Phase diagram construction</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">D. Chang, H. Huo, K. E. Johnston, M. Ménétrier, L. Monconduit, C. P. Grey, and A. Van der Ven, <em>Journal of Materials Chemistry A</em> 2015, <strong>3</strong>, 18928–18943.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1039/c5ta06183k">10.1039/c5ta06183k</a> <a class="reference download internal" download="" href="_downloads/93110f9929c29d52333264bf4e9b5e3a/Chang2015_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm publication-card publication-see2014-1 featured-card featured-see2014-1 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Ab Initio Structure Search and in Situ <sup>7</sup>Li NMR Studies of Discharge Products in the Li–S Battery System</div>
+<a class="reference external image-reference" href="https://doi.org/10.1021/ja508982p"><img alt="Ab Initio Structure Search and in Situ 7Li NMR Studies of Discharge Products in the Li–S Battery System" class="align-left" src="_images/image117.jpeg" />
+</a>
+<p class="sd-card-text"><strong>Methods Used</strong>: Structure enumeration</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">K. A. See, M. Leskes, J. M. Griffin, S. Britto, P. D. Matthews, A. Emly, A. Van der Ven, D. S. Wright, A. J. Morris, C. P. Grey, and R. Seshadri, <em>Journal of the American Chemical Society</em> 2014, <strong>136</strong>, 16368–16377.</p>
+<p class="sd-card-text">DOI: <a class="reference external" href="https://doi.org/10.1021/ja508982p">10.1021/ja508982p</a> <a class="reference download internal" download="" href="_downloads/5e97ee5fc266e42796668bbb173ebcbc/See2014_1.bib"><code class="xref download docutils literal notranslate"><span class="pre">[BibTeX]</span></code></a></p>
 </div>
 </div>
 </section>
@@ -430,7 +1002,7 @@ The Crucial Role of Vacancy Concentration in Enabling Superatomic Diffusion in L
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Overview</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#recent-publications-using-casm">Recent publications using CASM</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#publications-using-casm">Publications using CASM</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-help">Getting help</a></li>
 </ul>
 
@@ -461,7 +1033,7 @@ The Crucial Role of Vacancy Concentration in Enabling Superatomic Diffusion in L
 
   <p class="copyright">
     
-      © Copyright 2024, CASM Developers.
+      © Copyright 2026, CASM Developers.
       <br/>
     
   </p>
