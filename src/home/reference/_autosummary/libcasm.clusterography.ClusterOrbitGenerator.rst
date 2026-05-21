@@ -1,0 +1,35 @@
+ClusterOrbitGenerator
+=====================
+
+.. currentmodule:: libcasm.clusterography
+
+.. autoclass:: ClusterOrbitGenerator
+  :show-inheritance:
+
+  
+  
+  .. rubric:: Methods
+
+  .. autosummary::
+    :nosignatures:
+    :toctree:
+    :template: custom-function-template.rst
+  
+    ~ClusterOrbitGenerator.from_list
+    ~ClusterOrbitGenerator.to_dict
+  
+  
+
+  
+  
+  .. rubric:: Attributes
+
+  .. autosummary::
+    :nosignatures:
+    :toctree:
+    :template: custom-attr-template.rst
+    
+      ~ClusterOrbitGenerator.include_subclusters
+      ~ClusterOrbitGenerator.prototype
+    
+    

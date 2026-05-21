@@ -1,0 +1,36 @@
+libcasm.configuration.io
+========================
+
+.. automodule:: libcasm.configuration.io
+
+  
+  
+  
+
+  
+  
+  .. rubric:: Functions
+
+  .. autosummary::
+    :nosignatures:
+    :toctree:
+    :template: custom-function-template.rst
+  
+    configuration_list_from_data
+    configuration_list_to_data
+    supercell_list_from_data
+    supercell_list_to_data
+    symgroup_to_dict_with_group_classification
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+

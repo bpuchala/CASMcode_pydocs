@@ -42,6 +42,53 @@
 }
 
 
+/* Hide autosummary table while keeping toctree entries for sidebar nav */
+.hidden-autosummary {
+  display: none;
+}
+
+
+/* Distribution package labels in sidebar nav */
+li.nav-pkg-label {
+  font-size: 0.85em;
+  font-weight: 600;
+  color: var(--pst-color-primary);
+  border-bottom: 1px solid var(--pst-color-primary);
+  margin: 0.9rem 0.5rem 0.3rem 0;
+  padding: 0 0 0.2rem 0.75rem;
+  list-style: none;
+  pointer-events: none;
+}
+
+
+/* CASM project directory structure tables */
+
+.casm-part {
+    margin-bottom: 10px;
+}
+
+dl.casm-list div dd {
+    margin-left: 0 !important;
+    margin-inline-start: 0px !important;
+}
+
+.casm-part code {
+    padding: 0px 10px;
+}
+
+.casm-table th, .casm-table td {
+    padding-left: 10px;
+    padding-right: 0px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+.casm-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
 /* Misc */
 
 .extra-space-36 {

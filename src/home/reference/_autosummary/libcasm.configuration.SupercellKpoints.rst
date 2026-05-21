@@ -1,0 +1,50 @@
+SupercellKpoints
+================
+
+.. currentmodule:: libcasm.configuration
+
+.. autoclass:: SupercellKpoints
+  :show-inheritance:
+
+  
+  
+  .. rubric:: Methods
+
+  .. autosummary::
+    :nosignatures:
+    :toctree:
+    :template: custom-function-template.rst
+  
+  
+  
+
+  
+  
+  .. rubric:: Attributes
+
+  .. autosummary::
+    :nosignatures:
+    :toctree:
+    :template: custom-attr-template.rst
+    
+      ~SupercellKpoints.supercell
+      ~SupercellKpoints.tol
+      ~SupercellKpoints.site_sublattice_indices
+      ~SupercellKpoints.site_linear_unitcell_indices
+      ~SupercellKpoints.site_coordinate_cart
+      ~SupercellKpoints.reciprocal_prim_lattice
+      ~SupercellKpoints.reciprocal_superlattice
+      ~SupercellKpoints.index_converter
+      ~SupercellKpoints.indices
+      ~SupercellKpoints.coordinates
+      ~SupercellKpoints.coordinates_frac
+      ~SupercellKpoints.neg_kpoint_index
+      ~SupercellKpoints.orbits
+      ~SupercellKpoints.supercell_equivalence_map
+      ~SupercellKpoints.supercell_little_groups
+      ~SupercellKpoints.orbit_independent_indices
+      ~SupercellKpoints.little_groups
+      ~SupercellKpoints.equivalence_map_indices
+      ~SupercellKpoints.factor_system
+    
+    

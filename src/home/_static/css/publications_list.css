@@ -1,0 +1,51 @@
+/* Publications page controls + card grid. The cards themselves keep the
+ * featured-card sizing from featured_random.css; this file only styles the
+ * search/filter/sort bar and the list container. */
+
+.publications-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+    margin: 1rem 0 1.5rem 0;
+}
+
+.publications-controls .publications-search {
+    flex: 1 1 240px;
+    min-width: 240px;
+    padding: 0.4rem 0.6rem;
+    border: 1px solid var(--pst-color-border, #ccc);
+    border-radius: 4px;
+    font: inherit;
+}
+
+.publications-controls .publications-sort {
+    min-width: 180px;
+    padding: 0.4rem 0.6rem;
+    border: 1px solid var(--pst-color-border, #ccc);
+    border-radius: 4px;
+    font: inherit;
+    background: var(--pst-color-on-background, white);
+}
+
+/* Tom Select wraps .publications-methods in its own .ts-wrapper. Give it the
+ * same min-width as the other controls so the bar stays balanced. */
+.publications-controls .ts-wrapper {
+    min-width: 260px;
+    flex: 1 1 260px;
+}
+
+#publications-list .list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* featured_random.css caps .featured-card at 700px; extend the same cap to
+ * no-image cards so the two flavours line up on the publications page. */
+#publications-list .publication-card {
+    max-width: 700px;
+}
+
+/* No-result hint: list.js toggles .filter-active / hides items but doesn't
+ * surface "0 results" by default. Authors can drop a manual placeholder later. */

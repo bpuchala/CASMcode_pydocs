@@ -1,0 +1,49 @@
+﻿libcasm.casmglobal
+==================
+
+.. automodule:: libcasm.casmglobal
+
+  
+  
+  .. rubric:: Module Attributes
+
+  .. autosummary::
+    :nosignatures:
+    :toctree:
+  
+    TOL
+    KB
+    PLANCK
+  
+  
+
+  
+  
+  .. rubric:: Functions
+
+  .. autosummary::
+    :nosignatures:
+    :toctree:
+    :template: custom-function-template.rst
+  
+    get_max_threads
+    libcasm_global_version
+    max_threads
+    request_stop
+    reset_max_threads
+    reset_stop_requested
+    set_max_threads
+    stop_requested
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+

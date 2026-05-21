@@ -1,3 +1,4 @@
+import importlib.metadata
 import os
 
 # -- CASM common configuration ---
@@ -24,13 +25,13 @@ author = "CASM Developers"
 
 intersphinx_libcasm_packages = [
     ("global", "2.0"),
-    ("xtal", "2.0"),
+    ("xtal", "3"),
     ("composition", "2.0"),
-    ("mapping", "2.0"),
-    ("clexulator", "2.0"),
-    ("configuration", "2.0"),
-    ("monte", "2.0"),
-    ("clexmonte", "2.0"),
+    ("mapping", "3"),
+    ("clexulator", "3"),
+    ("configuration", "3"),
+    ("monte", "3"),
+    ("clexmonte", "3"),
 ]
 intersphinx_casm_packages = [
     ("bset", "2.0"),
@@ -114,14 +115,10 @@ templates_path = ["_templates"]
 # You can specify multiple suffix as a list of string:
 #
 # source_suffix = ['.rst', '.md']
-source_suffix = ".rst"
+source_suffix = {".rst": "restructuredtext"}
 
 # The master toctree document.
 master_doc = "index"
-
-# General information about the project.
-copyright = "2024, CASM Developers"
-author = "CASM Developers"
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -134,12 +131,16 @@ author = "CASM Developers"
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = "en"
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = []
+exclude_patterns = [
+    # Excluded from doc tree; stubs are generated via _generate_autosummary_stubs()
+    # in setup() below, which avoids the 'referenced in multiple toctrees' warning.
+    'reference/_stub_gen.rst',
+]
 
 # The name of the Pygments (syntax highlighting) style to use.
 # pygments_style = "sphinx"
@@ -151,7 +152,7 @@ todo_include_todos = False
 suppress_warnings = [
     'docutils',
     'ref.duplicate',  # Suppresses duplicate explicit target name warnings
-    'download.not_readable'
+    'download.not_readable',
 ]
 
 # -- Options for HTML output ----------------------------------------------
@@ -172,40 +173,10 @@ html_theme_options = {
         "image_light": "_static/small_logo.svg",
         "image_dark": "_static/small_logo_dark.svg",
     },
-    "pygment_light_style": "xcode",
-    "pygment_dark_style": "lightbulb",
+    "pygments_light_style": "xcode",
+    "pygments_dark_style": "lightbulb",
     "collapse_navigation": False,  # Prevents collapsing of navigation
     "navigation_depth": -1,        # Hides the sidebar by setting depth to -1
-    # "icon_links": [
-    #     {
-    #         # Label for this link
-    #         "name": "GitHub",
-    #         "url": github_url,  # required
-    #         "icon": "fa-brands fa-github",
-    #         "type": "fontawesome",
-    #     },
-    #     {
-    #         # Label for this link
-    #         "name": "PyPI",
-    #         "url": pypi_url,  # required
-    #         "icon": "fa-brands fa-python",
-    #         "type": "fontawesome",
-    #     },
-    # ],
-    # "favicons": [
-    #     {
-    #         "rel": "icon",
-    #         "sizes": "32x32",
-    #         "href": "favicon-32x32.png",
-    #     },
-    #     {
-    #         "rel": "icon",
-    #         "sizes": "16x16",
-    #         "href": "favicon-16x16.png",
-    #     },
-    #     {"rel": "apple-touch-icon", "sizes": "180x180", "href": "apple-touch-icon.png"},
-    # ],
-    # "primary_sidebar_end": ["primary_sidebar_end"]
 }
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -213,6 +184,16 @@ html_theme_options = {
 html_static_path = ["_static"]
 html_css_files = [
     "css/custom.css",
+    "css/featured_random.css",
+    "css/tom-select.bootstrap5.min.css",
+    "css/publications_list.css",
+]
+html_js_files = [
+    "js/pkg_nav_labels.js",
+    "js/featured_random.js",
+    "js/list.min.js",
+    "js/tom-select.complete.min.js",
+    "js/publications_list.js",
 ]
 html_favicon = "_static/favicon-16x16.png"
 html_show_sourcelink = False
@@ -236,4 +217,134 @@ html_show_sourcelink = False
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = "CASMdoc"
+
+
+# -- Per-module package/version annotation ------------------------------------
+
+def _pkg_version(pkg):
+    try:
+        return importlib.metadata.version(pkg)
+    except importlib.metadata.PackageNotFoundError:
+        return "unknown"
+
+
+_pypi_packages = [
+    "libcasm-global",
+    "libcasm-xtal",
+    "libcasm-composition",
+    "libcasm-mapping",
+    "libcasm-clexulator",
+    "libcasm-configuration",
+    "libcasm-monte",
+    "libcasm-clexmonte",
+    "casm-bset",
+    "casm-tools",
+    "casm-project",
+]
+
+rst_prolog = "\n".join(
+    f".. |version_{pkg.replace('-', '_')}| replace:: *v{_pkg_version(pkg)}*"
+    for pkg in _pypi_packages
+)
+
+
+_module_to_pypi = {
+    "libcasm.casmglobal": "libcasm-global",
+    "libcasm.counter": "libcasm-global",
+    "libcasm.xtal": "libcasm-xtal",
+    "libcasm.composition": "libcasm-composition",
+    "libcasm.mapping": "libcasm-mapping",
+    "libcasm.clexulator": "libcasm-clexulator",
+    "libcasm.clusterography": "libcasm-configuration",
+    "libcasm.configuration": "libcasm-configuration",
+    "libcasm.enumerate": "libcasm-configuration",
+    "libcasm.group": "libcasm-configuration",
+    "libcasm.irreps": "libcasm-configuration",
+    "libcasm.local_configuration": "libcasm-configuration",
+    "libcasm.occ_events": "libcasm-configuration",
+    "libcasm.sym_info": "libcasm-configuration",
+    "libcasm.monte": "libcasm-monte",
+    "libcasm.clexmonte": "libcasm-clexmonte",
+    "casm.bset": "casm-bset",
+    "casm.tools": "casm-tools",
+    "casm.project": "casm-project",
+}
+
+
+def _get_pypi_package(module_name):
+    parts = module_name.split(".")
+    for i in range(len(parts), 0, -1):
+        prefix = ".".join(parts[:i])
+        if prefix in _module_to_pypi:
+            return _module_to_pypi[prefix]
+    return None
+
+
+def _source_read(app, docname, source):
+    """Inject package/version line into autosummary stub pages and project structure pages."""
+    if "_autosummary/" in docname:
+        obj_name = docname.rsplit("_autosummary/", 1)[-1]
+        pypi_pkg = _get_pypi_package(obj_name)
+    elif "reference/project_structure/" in docname:
+        pypi_pkg = "casm-project"
+    else:
+        return
+    if pypi_pkg is None:
+        return
+    try:
+        version = importlib.metadata.version(pypi_pkg)
+    except importlib.metadata.PackageNotFoundError:
+        version = "unknown"
+    pypi_url = f"https://pypi.org/project/{pypi_pkg}/"
+    pkg_line = f"*Package:* `{pypi_pkg} <{pypi_url}>`__ v{version}"
+    lines = source[0].split("\n")
+    # Insert after the first blank line (which follows the title underline)
+    for i in range(2, len(lines)):
+        if lines[i] == "":
+            lines.insert(i + 1, "")
+            lines.insert(i + 1, pkg_line)
+            break
+    source[0] = "\n".join(lines)
+
+
+def _generate_autosummary_stubs(app):
+    """Generate autosummary stubs from _stub_gen.rst without adding to toctree.
+
+    The purpose of this is to allow constructing captioned toctrees in
+    reference/packages_reference.rst so that the documentation of Python packages is
+    grouped by distribution package. The captioned toctrees cannot generate the
+    _autosummary stub files.
+
+    _stub_gen.rst is excluded from the Sphinx document tree (via exclude_patterns)
+    so its autosummary toctree never conflicts with the captioned toctrees in
+    packages_reference.rst. We call generate_autosummary_docs directly to still
+    produce the stub files on disk.
+
+    Priority 400 ensures this runs before autosummary's process_generate_options
+    (priority 500), so the top-level module stubs exist when autosummary recursively
+    generates member stubs from the templates.
+    """
+    from sphinx.ext.autodoc._dynamic._mock import mock
+    from sphinx.ext.autosummary import get_rst_suffix
+    from sphinx.ext.autosummary.generate import generate_autosummary_docs
+
+    suffix = get_rst_suffix(app)
+    if suffix is None:
+        return
+
+    with mock(app.config.autosummary_mock_imports):
+        generate_autosummary_docs(
+            ['reference/_stub_gen.rst'],
+            suffix=suffix,
+            base_path=app.srcdir,
+            app=app,
+            imported_members=app.config.autosummary_imported_members,
+            overwrite=app.config.autosummary_generate_overwrite,
+            encoding=app.config.source_encoding,
+        )
+
+
+def setup(app):
+    app.connect("source-read", _source_read)
+    app.connect("builder-inited", _generate_autosummary_stubs, priority=400)
 

@@ -1,0 +1,42 @@
+LocalConfiguration
+==================
+
+.. currentmodule:: libcasm.local_configuration
+
+.. autoclass:: LocalConfiguration
+  :show-inheritance:
+
+  
+  
+  .. rubric:: Methods
+
+  .. autosummary::
+    :nosignatures:
+    :toctree:
+    :template: custom-function-template.rst
+  
+    ~LocalConfiguration.copy
+    ~LocalConfiguration.from_dict
+    ~LocalConfiguration.from_event
+    ~LocalConfiguration.make_invariant_subgroup
+    ~LocalConfiguration.standardize
+    ~LocalConfiguration.symgroup
+    ~LocalConfiguration.to_dict
+  
+  
+
+  
+  
+  .. rubric:: Attributes
+
+  .. autosummary::
+    :nosignatures:
+    :toctree:
+    :template: custom-attr-template.rst
+    
+      ~LocalConfiguration.event
+      ~LocalConfiguration.configuration
+      ~LocalConfiguration.pos
+      ~LocalConfiguration.event_info
+    
+    

@@ -1,0 +1,18 @@
+:orphan:
+
+.. autosummary::
+   :toctree: _autosummary
+   :template: custom-module-template.rst
+   :recursive:
+
+   libcasm.casmglobal
+   libcasm.counter
+   libcasm.xtal
+   libcasm.clusterography
+   libcasm.configuration
+   libcasm.enumerate
+   libcasm.group
+   libcasm.irreps
+   libcasm.local_configuration
+   libcasm.occ_events
+   libcasm.sym_info

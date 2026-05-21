@@ -1,4 +1,5 @@
-.. include:: ../_shared/logo_and_spacing.rst
+..
+    .. include:: ../_shared/logo_and_spacing.rst
 
 About CASM
 ==========

@@ -1,0 +1,34 @@
+DoFSpaceAnalysisResults
+=======================
+
+.. currentmodule:: libcasm.configuration
+
+.. autoclass:: DoFSpaceAnalysisResults
+  :show-inheritance:
+
+  
+  
+  .. rubric:: Methods
+
+  .. autosummary::
+    :nosignatures:
+    :toctree:
+    :template: custom-function-template.rst
+  
+    ~DoFSpaceAnalysisResults.to_dict
+  
+  
+
+  
+  
+  .. rubric:: Attributes
+
+  .. autosummary::
+    :nosignatures:
+    :toctree:
+    :template: custom-attr-template.rst
+    
+      ~DoFSpaceAnalysisResults.symmetry_adapted_dof_space
+      ~DoFSpaceAnalysisResults.symmetry_report
+    
+    
