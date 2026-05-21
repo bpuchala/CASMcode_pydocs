@@ -1,3 +1,6 @@
+:og:title: CASM — first-principles statistical mechanics for crystalline solids
+:og:description: An open-source Python suite for structure enumeration, cluster expansion, Monte Carlo, and phase-diagram construction in multi-component crystalline solids.
+
 .. include:: _shared/logo_and_spacing.rst
 
 .. toctree::
