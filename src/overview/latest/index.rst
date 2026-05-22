@@ -301,7 +301,7 @@ Links: |GitHub_project|_ |PyPI_project|_
 About CASM
 ==========
 
-The libcasm packages are part of the CASM_ open source software package, which is designed to perform first-principles statistical mechanical studies of multi-component crystalline solids.
+The libcasm packages are part of the CASM_ open source software package, which is designed to perform first-principles statistical mechanical studies of multicomponent crystalline solids.
 
 CASM is developed by the Van der Ven group, originally at the University of Michigan and currently at the University of California Santa Barbara.
 

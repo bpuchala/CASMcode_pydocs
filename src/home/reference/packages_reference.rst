@@ -1,10 +1,10 @@
 ..
     .. include:: ../_shared/logo_and_spacing.rst
 
-.. _public_api_reference:
+.. _python_packages_reference:
 
-Packages
-========
+Python packages
+===============
 
 CASM consists of a collection of distribution packages that implement related
 features in one or more Python packages. The Python namespace ``libcasm`` is

@@ -194,7 +194,7 @@ html_theme_options = {
     "pygments_light_style": "xcode",
     "pygments_dark_style": "lightbulb",
     "collapse_navigation": False,  # Prevents collapsing of navigation
-    "navigation_depth": -1,        # Hides the sidebar by setting depth to -1
+    "navigation_depth": 2,        # Hides the sidebar by setting depth to -1
 }
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -216,20 +216,21 @@ html_js_files = [
 html_favicon = "_static/favicon-16x16.png"
 html_show_sourcelink = False
 
-# Custom sidebar templates, must be a dictionary that maps document names
-# to template names.
-#
-# This is required for the alabaster theme
-# refs: http://alabaster.readthedocs.io/en/latest/installation.html#sidebars
+# Per-page left-sidebar templates. Currently trying the stock pydata-
+# sphinx-theme section-navigation sidebar on the home page; swap the
+# entry below back to ["quicklinks.html"] to use the custom tagline +
+# Quick Links list (template kept in _templates/ either way).
+
 # html_sidebars = {
-#     '**': [
-#         'about.html',
-#         'navigation.html',
-#         'relations.html',  # needs 'show_related': True theme option to display
-#         'searchbox.html',
-#         'donate.html',
-#     ]
+#     "index": ["sidebar-nav-bs.html"],
 # }
+
+html_sidebars = {
+    "index": ["quicklinks.html"],
+    # "**": ["sidebar-collapse", "sidebar-nav-bs"],
+    "**": ["sidebar-nav-bs"],
+    # "index": ["sidebar-nav-bs"]
+}
 
 # -- Options for HTMLHelp output ------------------------------------------
 

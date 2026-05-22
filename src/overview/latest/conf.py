@@ -213,7 +213,7 @@ texinfo_documents = [
         "CASM Documentation",
         author,
         "CASM",
-        "CASM: First-principles statistical mechanical software for the study of multi-component crystalline solids",
+        "CASM: First-principles statistical mechanical software for the study of multicomponent crystalline solids",
         "Miscellaneous",
     ),
 ]

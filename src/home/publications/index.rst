@@ -9,7 +9,7 @@ Publications
      <div class="publications-layout">
        <div class="publications-intro">
 
-Publications that use CASM. Filter by method, search by title or author, or sort by year or citation count.
+This page provides a list of publications that have used CASM, based on data from OpenCitations, OpenAlex, and CrossRef. Filter by method, search by title or author, or sort by year or citation count.
 
 .. raw:: html
 

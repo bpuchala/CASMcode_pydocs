@@ -9,9 +9,91 @@ Requires:
 Run from the CASMcode_pydocs repository root.
 """
 
+import json
 import os
 import re
 import shutil
+
+
+def _escape_html(s):
+    return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+def _generate_alloy_manager_pages():
+    """Generate placeholder Alloy Manager directory pages from local JSON.
+
+    Mirrors the project_structure pattern (anchor-named .rst per section, with
+    Location + Contents table) but uses a JSON source that lives in this repo,
+    since the alloy manager docs don't yet have an upstream home in
+    CASMcode_project. When they do, this can be swapped for a copy-from-source
+    block like project_structure above.
+    """
+    json_path = os.path.join(
+        "src", "home", "_scripts", "alloy_manager_directory_tables.json"
+    )
+    with open(json_path, "r") as f:
+        sections = json.load(f)
+
+    out_dir = os.path.join("src", "home", "reference", "alloy_manager_structure")
+    if os.path.exists(out_dir):
+        shutil.rmtree(out_dir)
+    os.makedirs(out_dir)
+
+    for section in sections:
+        anchor = section["anchor"]
+        title = section["section"]
+        location = section["location"]
+        files = section.get("files", [])
+
+        lines = [
+            f".. _{anchor}:",
+            "",
+            title,
+            "=" * len(title),
+            "",
+            ".. raw:: html",
+            "",
+            '    <dl class="casm-list">',
+            '    <div style="display: flex; flex-direction: row; align-items: center; gap: 5px;">',
+            '        <dt class="casm-part">Location:</dt>',
+            f'        <dd class="casm-part"><code>{_escape_html(location)}</code></dd>',
+            "    </div>",
+            '    <dt class="casm-part">Contents:</dt>',
+            '    <dd class="casm-part">',
+            '    <table class="casm-table">',
+            "        <tr>",
+            "            <th>Name</th>",
+            "            <th>Description</th>",
+            "            <th>Format</th>",
+            "        </tr>",
+        ]
+        for file in files:
+            name = _escape_html(file["name"])
+            desc = _escape_html(file["description"])
+            href = _escape_html(file["format"]["href"])
+            text = _escape_html(file["format"]["text"])
+            lines.extend(
+                [
+                    "        <tr>",
+                    f"            <td><code>{name}</code></td>",
+                    f"            <td>{desc}</td>",
+                    f'            <td><a href="{href}">{text}</a></td>',
+                    "        </tr>",
+                ]
+            )
+        lines.extend(
+            [
+                "    </table>",
+                "    </dd>",
+                "    </dl>",
+            ]
+        )
+
+        out_path = os.path.join(out_dir, f"{anchor}.rst")
+        with open(out_path, "w") as out:
+            out.write("\n".join(lines) + "\n")
+        print(f"Wrote {out_path}")
+
 
 CASMCODE_PROJECT_DIR = os.environ.get("CASMCODE_PROJECT_DIR")
 if CASMCODE_PROJECT_DIR is None:
@@ -73,6 +155,9 @@ if n == 0:
 with open(ref_path, "w") as f:
     f.write(new_content)
 print(f"Updated toctree in {ref_path}")
+
+# Generate placeholder Alloy Manager directory pages from local JSON.
+_generate_alloy_manager_pages()
 
 # Copy generated featured-publications cards + assets from CASMcode_citations.
 # The publications/ subtree is fully owned by CASMcode_citations, so it's

@@ -3,7 +3,7 @@
 
 .. _project_structure_reference:
 
-CASM project structure
+CASM Project structure
 ======================
 
 The CASM project structure standardizes the location of various files used by CASM when constructing, fitting, and evaluating a cluster expansion.

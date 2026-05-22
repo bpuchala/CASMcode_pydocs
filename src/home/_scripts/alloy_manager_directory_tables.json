@@ -1,0 +1,24 @@
+[
+  {
+    "section": "CASM Alloy Manager Directory",
+    "anchor": "alloy-dir",
+    "location": "<alloy>/",
+    "files": [
+      {
+        "name": "projects/",
+        "description": "CASM projects, organized by parent crystal structure",
+        "format": {"href": "TODO", "text": "TODO"}
+      },
+      {
+        "name": "structures/",
+        "description": "Line compound and extended defect structure calculations",
+        "format": {"href": "TODO", "text": "TODO"}
+      },
+      {
+        "name": "results/",
+        "description": "Derived results (phase diagrams, etc.)",
+        "format": {"href": "TODO", "text": "TODO"}
+      }
+    ]
+  }
+]

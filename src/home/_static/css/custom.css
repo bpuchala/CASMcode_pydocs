@@ -95,6 +95,57 @@ dl.casm-list div dd {
   margin-top: 36px; /* Adjust the value as needed */
 }
 
+
+/* Home page left sidebar — tagline + attribution row sitting above the
+ * Quick Links nav. Mirrors the size and accent-border treatment used by
+ * .nav-pkg-label so the home sidebar feels of-a-piece with the per-package
+ * section nav on other pages. */
+.sidebar-tagline {
+  font-size: 1.125em;
+  color: var(--pst-color-text-muted);
+  padding: 0 0.5rem 0.75rem 0;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.sidebar-tagline p {
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+.sidebar-tagline a {
+  color: var(--pst-color-sidebar-link, var(--pst-color-text-base));
+  text-decoration: none;
+}
+
+.sidebar-tagline a:hover {
+  color: var(--pst-color-link);
+  text-decoration: underline;
+}
+
+.sidebar-tagline ul.sidebar-affiliations {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.25rem 0 0 0;
+}
+
+.sidebar-tagline .sidebar-affiliations li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.sidebar-tagline .sidebar-affiliations li:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-tagline .sidebar-affiliations i {
+  color: var(--pst-color-text-muted);
+  width: 1rem;
+  text-align: center;
+  flex-shrink: 0;
+}
+
 /* Reduce the font size of all section headers */
 h1 {
   font-size: 36px; /* Reduced from 42px */

@@ -6,8 +6,10 @@
 Contributing
 ============
 
-Overview
---------
+Collaboration is welcome and new features can be incoporated by forking a CASM package repository on GitHub, creating a new feature, and submitting a pull request.
+
+Project organization
+--------------------
 
 For CASM v2+, the large existing distributions CASMcode (for C++ code) and CASMpython (for Python code) are split into smaller distributions focused on particular topics. They are organized into two namespaces: *libcasm*, for packages that include C++ implementations, and *casm*, for pure Python packages.
 

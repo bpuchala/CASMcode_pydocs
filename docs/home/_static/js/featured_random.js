@@ -3,7 +3,9 @@
  * (hidden by featured_random.css). This script fetches the weights table
  * and unhides N picked entries. */
 (function () {
-    var N = 3;
+    // Default N for the index aggregator. The carousel emits
+    // data-n="..." on #featured-weights to override.
+    var DEFAULT_N = 3;
 
     function pickWeighted(weights, n) {
         // Weighted sampling without replacement (Efraimidis & Spirakis).
@@ -34,7 +36,7 @@
         });
     }
 
-    function loadWeights() {
+    function loadConfig() {
         // Weights are inlined into the page by build_cards.py as a
         // <script type="application/json"> tag — avoids the file:// CORS
         // block that prevents fetch()ing a sibling file in static builds.
@@ -43,8 +45,12 @@
             console.warn("featured_random: no #featured-weights element found");
             return null;
         }
+        var n = parseInt(el.getAttribute("data-n"), 10);
+        if (!(n > 0)) {
+            n = DEFAULT_N;
+        }
         try {
-            return JSON.parse(el.textContent);
+            return { weights: JSON.parse(el.textContent), n: n };
         } catch (e) {
             console.warn("featured_random: invalid weights JSON:", e);
             return null;
@@ -52,9 +58,9 @@
     }
 
     document.addEventListener("DOMContentLoaded", function () {
-        var weights = loadWeights();
-        if (weights) {
-            reveal(pickWeighted(weights, N));
+        var cfg = loadConfig();
+        if (cfg) {
+            reveal(pickWeighted(cfg.weights, cfg.n));
         }
     });
 })();

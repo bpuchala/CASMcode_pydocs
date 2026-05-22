@@ -10,10 +10,13 @@ Reference
 
     packages_reference
     project_structure_reference
+    alloy_manager_structure_reference
     json_format_reference
+
 
 This section provides:
 
-- the :ref:`CASM Python packages public API reference <public_api_reference>`,
-- the :ref:`CASM project directory structure reference <project_structure_reference>`, and
-- the :ref:`CASM JSON file format reference <json_format_reference>`.
+- the :ref:`CASM Python packages reference <python_packages_reference>`,
+- the :ref:`CASM Project directory structure reference <project_structure_reference>`,
+- the :ref:`CASM Alloy Manager directory structure reference <alloy_structure_reference>`, and
+- the :ref:`JSON format reference <json_format_reference>`.

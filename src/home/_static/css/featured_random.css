@@ -22,3 +22,9 @@
 .featured-card {
     max-width: 700px;
 }
+
+/* Carousel cards: fixed 500px width so the swipeable strip has a consistent
+ * card size regardless of the sd-card-cols-N flex sizing. */
+.sd-cards-carousel .featured-card {
+    width: 500px;
+}
