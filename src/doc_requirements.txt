@@ -1,8 +1,10 @@
+myst-nb
 numpydoc
 sphinx
 sphinx-argparse
 sphinx-copybutton
 sphinx-design
+sphinx-togglebutton
 sphinx_rtd_theme
 sphinxcontrib-bibtex
 sphinxcontrib-email

@@ -22,12 +22,6 @@ Install from source
 See :ref:`contributing-to-casm`.
 
 
-For contributors
-----------------
-
-See :ref:`contributing-to-casm`.
-
-
 Configuration
 -------------
 

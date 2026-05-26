@@ -98,8 +98,10 @@ extensions = [
     "sphinx.ext.intersphinx",
     "sphinx_copybutton",
     "sphinx_design",
+    "sphinx_togglebutton",
     "sphinxext.opengraph",
     "numpydoc",
+    "myst_nb",
 ]
 
 # OpenGraph meta tags — render a sensible preview when a docs page is shared
@@ -165,6 +167,20 @@ suppress_warnings = [
     'ref.duplicate',  # Suppresses duplicate explicit target name warnings
     'download.not_readable',
 ]
+
+# -- Myst notebook options ------------------------------------------------
+
+# Options for notebook rendering
+# nb_scroll_outputs = False
+myst_enable_extensions = [
+    "colon_fence",
+    "dollarmath",
+    "amsmath",
+]
+myst_amsmath_enable = True
+
+# Combine multiple output into one (but this erases newlines)
+nb_merge_streams = True
 
 # -- Options for HTML output ----------------------------------------------
 

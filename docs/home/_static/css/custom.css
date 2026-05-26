@@ -5,7 +5,7 @@
   --pst-color-inline-code: #0072b5;
   --sd-color-card-border-hover: #0072b5;
 
-  dt {
+  dt:not(.casm-part) {
     background-color: #eaeaea;
   }
 
@@ -45,6 +45,15 @@
 /* Hide autosummary table while keeping toctree entries for sidebar nav */
 .hidden-autosummary {
   display: none;
+}
+
+
+/* Scrollable notebook stream output for cells tagged "scroll". MyST-NB maps
+   the "scroll" cell tag to a tag_scroll CSS class but doesn't style it. */
+div.tag_scroll div.output.stream {
+  max-height: 20em;
+  overflow-y: auto;
+  overflow-x: auto;
 }
 
 
@@ -164,4 +173,32 @@ h5 {
 }
 h6 {
   font-size: 14px; /* Reduced from 16px */
+}
+
+
+/* CASM project directory structure tables (reference/project_structure/*.rst) */
+
+.casm-part {
+    margin-bottom: 10px;
+}
+
+dl.casm-list div dd {
+    margin-left: 0 !important;
+    margin-inline-start: 0px !important;
+}
+
+.casm-part code {
+    padding: 0px 10px;
+}
+
+.casm-table th, .casm-table td {
+    padding-left: 10px;
+    padding-right: 0px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+.casm-table {
+    border-collapse: collapse;
+    width: 100%;
 }
